@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a1006">
+  <meta name="description" content="Royal Proteins & Foods - Premium mutton, chicken, fruits & event services in Vyasarpadi, Chennai. Order online for delivery. Good Food, Good Moments.">
+  <title>Royal Proteins & Foods – Premium Meat & Food Store, Chennai</title>
+  <link rel="canonical" href="https://royalproteinsandfoods.com/">
+  <meta property="og:title" content="Royal Proteins & Foods – Chennai">
+  <meta property="og:description" content="Premium mutton, chicken, fruits & event services. Order online for delivery in Vyasarpadi, Chennai.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://royalproteinsandfoods.com/">
+  <meta property="og:locale" content="en_IN">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    img { max-width: 100%; display: block; }
+
+    :root {
+      --gold: #d4a853;
+      --gold-light: #f0d68a;
+      --gold-dim: rgba(212, 168, 83, 0.12);
+      --gold-glow: rgba(212, 168, 83, 0.06);
+      --bg: #0f0a04;
+      --surface: #1a1208;
+      --surface2: #2a1f10;
+      --surface3: #3d2e18;
+      --text: #f5f0e8;
+      --text-secondary: #c4b89a;
+      --text-muted: #9a8b6e;
+      --border: rgba(245, 240, 232, 0.12);
+      --border-light: rgba(245, 240, 232, 0.25);
+      --green: #22c55e;
+      --whatsapp: #25D366;
+      --radius: 20px;
+      --radius-sm: 12px;
+      --radius-xs: 8px;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--gold); text-decoration: none; transition: color .2s; }
+    a:hover { color: var(--gold-light); }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    /* ─── HEADER ─── */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(15, 10, 4, 0.92);
+      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      transition: background .3s;
+    }
+    header.scrolled { background: rgba(15, 10, 4, 0.98); }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px; padding: 0 20px; max-width: 1200px; margin: 0 auto;
+    }
+    .logo {
+      font-family: var(--font-display); font-size: 1.3rem; font-weight: 700;
+      color: var(--gold); letter-spacing: 0.02em;
+    }
+    .logo span { color: var(--text); }
+    nav { display: flex; align-items: center; gap: 28px; }
+    nav a {
+      font-size: 0.85rem; font-weight: 500; color: var(--text-secondary);
+      letter-spacing: 0.04em; position: relative; padding: 4px 0;
+    }
+    nav a::after {
+      content: ''; position: absolute; left: 0; bottom: -2px;
+      width: 0; height: 2px; background: var(--gold);
+      transition: width .3s ease;
+    }
+    nav a:hover::after, nav a.active::after { width: 100%; }
+    nav a:hover { color: var(--text); }
+    .nav-cta {
+      background: var(--gold); color: #0f0a04 !important; padding: 8px 20px;
+      border-radius: 999px; font-weight: 700; font-size: 0.8rem;
+      letter-spacing: 0.02em; transition: all .25s;
+    }
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: all .3s; }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 100px 20px 60px;
+      background: linear-gradient(135deg, #0f0a04 0%, #1a1208 40%, #2a1f10 70%, #1a1208 100%);
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 30% 50%, rgba(212, 168, 83, 0.06) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 30%, rgba(212, 168, 83, 0.04) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .hero-content { position: relative; z-index: 1; max-width: 720px; }
+    .hero-badge {
+      display: inline-block; padding: 6px 18px; border-radius: 999px;
+      background: var(--gold-dim); border: 1px solid rgba(212, 168, 83, 0.2);
+      font-size: 0.75rem; font-weight: 600; color: var(--gold-light);
+      letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: var(--font-display); font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 700; line-height: 1.15; margin-bottom: 20px;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero p {
+      font-size: 1.05rem; color: var(--text-secondary); max-width: 540px;
+      margin: 0 auto 36px; line-height: 1.7;
+    }
+    .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 32px; border-radius: 999px; font-weight: 600;
+      font-size: 0.9rem; border: none; cursor: pointer;
+      transition: all .25s; font-family: var(--font-body);
+    }
+    .btn-primary { background: var(--gold); color: #0f0a04; }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(212, 168, 83, 0.25); }
+    .btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border-light); }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+    .btn-whatsapp { background: var(--whatsapp); color: #fff; }
+    .btn-whatsapp:hover { background: #1ebe57; transform: translateY(-2px); }
+
+    /* ─── SECTION COMMON ─── */
+    section { padding: 80px 0; }
+    .section-label {
+      display: inline-block; font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700; margin-bottom: 12px;
+    }
+    .section-sub {
+      color: var(--text-secondary); font-size: 1rem; max-width: 580px;
+      line-height: 1.7;
+    }
+    .section-head { text-align: center; margin-bottom: 48px; }
+    .section-head .section-sub { margin: 0 auto; }
+
+    /* ─── ABOUT ─── */
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+      align-items: center;
+    }
+    .about-visual {
+      aspect-ratio: 4/3; border-radius: var(--radius);
+      background: linear-gradient(135deg, var(--surface2), var(--surface3));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 4rem; color: var(--gold); opacity: 0.6;
+      border: 1px solid var(--border); overflow: hidden;
+    }
+    .about-visual img { width: 100%; height: 100%; object-fit: cover; }
+    .about-text h3 {
+      font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 16px;
+    }
+    .about-text p { color: var(--text-secondary); margin-bottom: 16px; line-height: 1.8; }
+    .about-info { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+    .about-info-item {
+      padding: 16px; background: var(--surface); border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+    }
+    .about-info-item .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 4px; }
+    .about-info-item .value { font-weight: 600; font-size: 0.95rem; }
+
+    /* ─── PRODUCTS ─── */
+    .products { background: var(--surface); }
+    .category-tabs {
+      display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .cat-tab {
+      padding: 9px 22px; border-radius: 999px; border: 1px solid var(--border);
+      background: transparent; color: var(--text-secondary); cursor: pointer;
+      font-size: 0.82rem; font-weight: 500; transition: all .25s;
+      font-family: var(--font-body);
+    }
+    .cat-tab:hover { border-color: var(--gold); color: var(--gold); }
+    .cat-tab.active { background: var(--gold); color: #0f0a04; border-color: var(--gold); font-weight: 600; }
+    .product-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    .product-card {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden;
+      transition: all .3s; display: flex; flex-direction: column;
+    }
+    .product-card:hover { transform: translateY(-4px); border-color: rgba(212, 168, 83, 0.3); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
+    .product-img {
+      aspect-ratio: 1/1; background: var(--surface2);
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .product-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+    .product-card:hover .product-img img { transform: scale(1.06); }
+    .product-img .badge {
+      position: absolute; top: 10px; left: 10px;
+      padding: 3px 10px; border-radius: 999px;
+      font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .badge-mutton { background: rgba(180, 100, 60, 0.2); color: #d48a5a; border: 1px solid rgba(180, 100, 60, 0.3); }
+    .badge-chicken { background: rgba(255, 200, 100, 0.15); color: #f0c060; border: 1px solid rgba(255, 200, 100, 0.25); }
+    .badge-fruit { background: rgba(100, 200, 100, 0.15); color: #80d080; border: 1px solid rgba(100, 200, 100, 0.25); }
+    .badge-service { background: rgba(100, 150, 255, 0.15); color: #80b0ff; border: 1px solid rgba(100, 150, 255, 0.25); }
+    .product-body { padding: 16px; flex: 1; display: flex; flex-direction: column; }
+    .product-name {
+      font-family: var(--font-display); font-size: 1.05rem; font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .product-desc {
+      font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .product-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border);
+    }
+    .product-price {
+      font-weight: 800; font-size: 1.1rem; color: var(--gold);
+    }
+    .product-price small { font-size: 0.65rem; font-weight: 500; color: var(--text-muted); }
+    .add-btn {
+      width: 36px; height: 36px; border-radius: 50%; border: none;
+      background: var(--gold-dim); color: var(--gold); cursor: pointer;
+      font-size: 1.2rem; font-weight: 700; display: grid; place-items: center;
+      transition: all .2s;
+    }
+    .add-btn:hover { background: var(--gold); color: #0f0a04; }
+
+    /* ─── CART ─── */
+    .cart-toggle {
+      position: fixed; bottom: 24px; right: 24px; z-index: 99;
+      width: 56px; height: 56px; border-radius: 50%; border: none;
+      background: var(--gold); color: #0f0a04; cursor: pointer;
+      font-size: 1.3rem; display: grid; place-items: center;
+      box-shadow: 0 4px 24px rgba(212, 168, 83, 0.35);
+      transition: all .25s;
+    }
+    .cart-toggle:hover { transform: scale(1.05); }
+    .cart-count {
+      position: absolute; top: -4px; right: -4px;
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--whatsapp); color: #fff; font-size: 0.65rem;
+      font-weight: 700; display: grid; place-items: center;
+      border: 2px solid var(--bg);
+    }
+    .cart-panel {
+      position: fixed; bottom: 0; right: 0; z-index: 200;
+      width: 100%; max-width: 400px; height: 80vh; max-height: 600px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius) var(--radius) 0 0;
+      transform: translateY(110%); transition: transform .35s var(--ease, ease);
+      display: flex; flex-direction: column; overflow: hidden;
+    }
+    .cart-panel.open { transform: translateY(0); }
+    .cart-header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 20px; border-bottom: 1px solid var(--border);
+    }
+    .cart-header h3 { font-family: var(--font-display); font-size: 1.1rem; }
+    .cart-close { background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.4rem; }
+    .cart-items { flex: 1; overflow-y: auto; padding: 12px 20px; }
+    .cart-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 0; border-bottom: 1px solid var(--border);
+    }
+    .cart-item-info { flex: 1; }
+    .cart-item-name { font-size: 0.9rem; font-weight: 500; }
+    .cart-item-price { font-size: 0.8rem; color: var(--gold); }
+    .cart-item-qty { display: flex; align-items: center; gap: 10px; }
+    .cart-item-qty button {
+      width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--border);
+      background: transparent; color: var(--text); cursor: pointer;
+      font-size: 0.9rem; display: grid; place-items: center; transition: all .15s;
+    }
+    .cart-item-qty button:hover { background: var(--surface3); }
+    .cart-item-qty span { font-weight: 600; min-width: 20px; text-align: center; }
+    .cart-empty {
+      text-align: center; padding: 40px 0; color: var(--text-muted);
+    }
+    .cart-empty svg { width: 48px; height: 48px; opacity: 0.3; margin-bottom: 12px; }
+    .cart-footer {
+      padding: 16px 20px; border-top: 1px solid var(--border);
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .cart-total { display: flex; justify-content: space-between; font-weight: 700; font-size: 1.05rem; }
+    .cart-checkout {
+      width: 100%; padding: 14px; border: none; border-radius: var(--radius-sm);
+      background: var(--whatsapp); color: #fff; font-weight: 700; font-size: 0.95rem;
+      cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: all .2s; font-family: var(--font-body);
+    }
+    .cart-checkout:hover { background: #1ebe57; }
+
+    /* ─── CONTACT ─── */
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 50px;
+    }
+    .contact-info h3 {
+      font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 20px;
+    }
+    .contact-item {
+      display: flex; gap: 14px; align-items: flex-start; margin-bottom: 20px;
+    }
+    .contact-icon {
+      width: 44px; height: 44px; border-radius: var(--radius-xs);
+      background: var(--gold-dim); display: grid; place-items: center;
+      flex-shrink: 0; font-size: 1.1rem;
+    }
+    .contact-item .label { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 2px; }
+    .contact-item .val { font-weight: 500; }
+    .contact-item .val a { color: var(--text); }
+    .contact-item .val a:hover { color: var(--gold); }
+    .hours-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px;
+      background: var(--surface); padding: 16px 20px; border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+    }
+    .hours-row { display: flex; justify-content: space-between; font-size: 0.85rem; padding: 3px 0; }
+    .hours-row .day { color: var(--text-secondary); }
+    .hours-row .time { font-weight: 500; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border); padding: 40px 0 100px;
+      text-align: center;
+    }
+    footer .logo { font-size: 1.1rem; margin-bottom: 8px; }
+    footer .tagline { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px; }
+    footer .links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 20px; }
+    footer .links a { color: var(--text-secondary); font-size: 0.82rem; }
+    footer .links a:hover { color: var(--gold); }
+    footer .copyright { color: var(--text-muted); font-size: 0.75rem; }
+    footer .copyright a { color: var(--text-muted); }
+
+    /* ─── OVERLAY ─── */
+    .overlay {
+      position: fixed; inset: 0; z-index: 150; background: rgba(0,0,0,0.5);
+      opacity: 0; pointer-events: none; transition: opacity .3s;
+    }
+    .overlay.show { opacity: 1; pointer-events: auto; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (hover: none) and (pointer: coarse) {
+      .product-card:hover { transform: none; }
+      .product-card:hover .product-img img { transform: none; }
+      .btn:hover { transform: none; }
+    }
+
+    @media (max-width: 768px) {
+      html { font-size: 15px; }
+      .header-inner { height: 56px; padding: 0 14px; }
+      .logo { font-size: 1.1rem; }
+      nav { display: none; }
+      nav.open {
+        display: flex; flex-direction: column; position: fixed;
+        top: 56px; left: 0; right: 0; background: var(--surface);
+        padding: 12px 0; border-bottom: 1px solid var(--border);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        gap: 0; z-index: 200;
+      }
+      nav.open a {
+        display: block; padding: 14px 20px; font-size: 0.95rem;
+        border-bottom: 1px solid var(--border);
+      }
+      nav.open a:last-child { border-bottom: none; }
+      nav.open a::after { display: none; }
+      nav.open .nav-cta {
+        margin: 8px 14px; text-align: center; border-radius: var(--radius-sm);
+      }
+      .hamburger { display: flex; }
+      .hero { min-height: 92vh; padding: 80px 16px 40px; }
+      .hero h1 { font-size: 1.9rem; }
+      .hero p { font-size: 0.92rem; margin-bottom: 28px; }
+      .hero-btns { flex-direction: column; align-items: center; }
+      .hero-btns .btn { width: 100%; max-width: 300px; justify-content: center; padding: 14px 20px; }
+      .about-grid { grid-template-columns: 1fr; gap: 24px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 24px; }
+      .product-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .product-body { padding: 10px; }
+      .product-name { font-size: 0.88rem; }
+      .product-desc { font-size: 0.72rem; margin-bottom: 6px; }
+      .product-price { font-size: 0.95rem; }
+      .product-footer { padding-top: 8px; }
+      .add-btn { width: 40px; height: 40px; font-size: 1.3rem; }
+      .about-info { grid-template-columns: 1fr; }
+      .hours-grid { grid-template-columns: 1fr; }
+      .cart-panel { max-width: 100%; height: 85vh; border-radius: 16px 16px 0 0; }
+      .cart-item-qty button { width: 36px; height: 36px; font-size: 1.1rem; }
+      .category-tabs {
+        flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start;
+        padding-bottom: 8px; margin-bottom: 24px; gap: 6px;
+        -webkit-overflow-scrolling: touch; scrollbar-width: none;
+      }
+      .category-tabs::-webkit-scrollbar { display: none; }
+      .cat-tab { flex-shrink: 0; padding: 8px 16px; font-size: 0.78rem; }
+      .section-head { margin-bottom: 32px; }
+      section { padding: 50px 0; }
+      footer { padding: 32px 0 80px; }
+    }
+    @media (max-width: 400px) {
+      .product-grid { gap: 8px; }
+      .product-body { padding: 8px; }
+      .product-name { font-size: 0.8rem; }
+      .product-price { font-size: 0.85rem; }
+      .add-btn { width: 36px; height: 36px; font-size: 1.1rem; }
+      .hero h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── HEADER ─── -->
+  <header id="header">
+    <div class="header-inner">
+      <div class="logo">Royal<span>Proteins</span></div>
+      <nav id="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:9840951202" class="nav-cta">Call Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">Chennai's Trusted Meat Store</div>
+      <h1>Good Food, <span>Good Moments</span></h1>
+      <p>Premium quality mutton, chicken, fresh fruits and event services in Vyasarpadi, Chennai. Order online for delivery &amp; pickup.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn btn-primary">Browse Products</a>
+        <a href="https://wa.me/919840951202?text=Hi%20Royal%20Proteins!%20I%27d%20like%20to%20place%20an%20order" target="_blank" class="btn btn-whatsapp">Order on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">About Us</div>
+        <h2 class="section-title">Who We Are</h2>
+        <p class="section-sub">Serving quality meat, fresh produce and event services to Chennai families since our founding.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <img src="images/logo.jpg" alt="Royal Proteins & Foods" style="width:100%;height:100%;object-fit:contain;padding:20px;">
+        </div>
+        <div class="about-text">
+          <h3>Royal Proteins &amp; Foods</h3>
+          <p>Based in Vyasarpadi, Chennai, we are a family-run business dedicated to providing the finest quality mutton, chicken, and fresh fruits at fair prices. Every cut is carefully prepared to ensure freshness and hygiene.</p>
+          <p>Beyond our retail meats, we also offer event services including Shamiyana tent rental, decorations, cooking vessels, and professional cleaners — making us a one-stop shop for your gatherings and daily needs.</p>
+          <div class="about-info">
+            <div class="about-info-item">
+              <div class="label">📍 Location</div>
+              <div class="value">Vyasarpadi, Chennai, Tamil Nadu</div>
+            </div>
+            <div class="about-info-item">
+              <div class="label">📞 Phone</div>
+              <div class="value">9840951202</div>
+            </div>
+            <div class="about-info-item">
+              <div class="label">🕐 Hours</div>
+              <div class="value">Mon–Fri 9AM–9PM · Sat 10AM–10PM · Sun 9AM–9PM</div>
+            </div>
+            <div class="about-info-item">
+              <div class="label">💳 GST</div>
+              <div class="value">33BCDPM9152M1ZA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRODUCTS ─── -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">Our Products</div>
+        <h2 class="section-title">Fresh &amp; Premium</h2>
+        <p class="section-sub">Choose from our wide selection of quality meats, fruits, and event services. All prices in ₹.</p>
+      </div>
+
+      <div class="category-tabs" id="categoryTabs">
+        <button class="cat-tab active" data-cat="all">All</button>
+        <button class="cat-tab" data-cat="mutton">🐑 Mutton</button>
+        <button class="cat-tab" data-cat="chicken">🍗 Chicken</button>
+        <button class="cat-tab" data-cat="fruit">🍉 Fruits</button>
+        <button class="cat-tab" data-cat="service">🎪 Services</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-sub">Call, WhatsApp, or visit us — we're always happy to help.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Reach Out</h3>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="label">Phone / WhatsApp</div>
+              <div class="val"><a href="tel:9840951202">9840951202</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="label">Address</div>
+              <div class="val">Vyasarpadi, Chennai, Tamil Nadu</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <div class="label">Business Hours</div>
+              <div class="val">Open daily · 9AM – 9PM (Sat till 10PM)</div>
+            </div>
+          </div>
+          <div style="margin-top: 20px;">
+            <a href="https://wa.me/919840951202" target="_blank" class="btn btn-whatsapp" style="display: inline-flex;">Chat on WhatsApp</a>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 16px;">Business Hours</h3>
+          <div class="hours-grid">
+            <div class="hours-row"><span class="day">Monday</span><span class="time">9:00 AM – 9:00 PM</span></div>
+            <div class="hours-row"><span class="day">Tuesday</span><span class="time">9:00 AM – 9:00 PM</span></div>
+            <div class="hours-row"><span class="day">Wednesday</span><span class="time">9:00 AM – 9:00 PM</span></div>
+            <div class="hours-row"><span class="day">Thursday</span><span class="time">9:00 AM – 9:00 PM</span></div>
+            <div class="hours-row"><span class="day">Friday</span><span class="time">9:00 AM – 9:00 PM</span></div>
+            <div class="hours-row"><span class="day">Saturday</span><span class="time">10:00 AM – 10:00 PM</span></div>
+            <div class="hours-row"><span class="day">Sunday</span><span class="time">9:00 AM – 9:00 PM</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="container">
+      <div class="logo">Royal<span>Proteins</span></div>
+      <div class="tagline">Good Food, Good Moments</div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Royal Proteins &amp; Foods · Vyasarpadi, Chennai · GST: 33BCDPM9152M1ZA
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── CART ─── -->
+  <button class="cart-toggle" id="cartToggle" aria-label="Open cart">
+    🛒 <span class="cart-count" id="cartCount">0</span>
+  </button>
+  <div class="overlay" id="overlay"></div>
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h3>Your Order 🛒</h3>
+      <button class="cart-close" id="cartClose">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <p style="font-size: 0.9rem;">Your cart is empty</p>
+        <p style="font-size: 0.78rem; color: var(--text-muted);">Add products to get started</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total"><span>Total</span><span id="cartTotal">₹0</span></div>
+      <button class="cart-checkout" id="cartCheckout">
+        <span>💬</span> Order on WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // ─── PRODUCT DATA (from original site) ───
+    const products = [
+      // MUTTON
+      { id: 1, cat: 'mutton', name: 'Mutton', desc: 'Fresh premium quality mutton', price: 1100, unit: '/kg', img: 'mutton.jpg', badge: 'Best Seller' },
+      { id: 2, cat: 'mutton', name: 'Chops', desc: '1kg – tender and fresh', price: 1099, unit: '/kg', img: 'chops.jpg' },
+      { id: 3, cat: 'mutton', name: 'Mince Keema', desc: '1kg (500g also available) – without bone', price: 1300, unit: '/kg', img: 'keema.jpg' },
+      { id: 4, cat: 'mutton', name: 'Breast Soup Bone (with fat)', desc: '1kg – perfect for soups', price: 1040, unit: '/kg', img: 'soupbone-fat.jpg' },
+      { id: 5, cat: 'mutton', name: 'Breast Soup Bone (without fat)', desc: '1kg – lean soup bone', price: 1040, unit: '/kg', img: 'soupbone-lean.jpg' },
+      { id: 6, cat: 'mutton', name: 'Boneless Mutton', desc: '1kg – 100% meat, no bone', price: 1500, unit: '/kg', img: 'boneless-mutton.jpg', badge: 'Premium' },
+      { id: 7, cat: 'mutton', name: 'Nalli Bone (with meat)', desc: '1kg', price: 1100, unit: '/kg', img: 'nalli-with-meat.jpg' },
+      { id: 8, cat: 'mutton', name: 'Nalli Bone (without meat)', desc: '1kg', price: 900, unit: '/kg', img: 'nalli-no-meat.jpg' },
+      { id: 9, cat: 'mutton', name: 'Brain', desc: 'Per piece', price: 120, unit: '/pc', img: 'brain.jpg' },
+      { id: 10, cat: 'mutton', name: 'Lever (Liver)', desc: 'Available in 250g / 500g / 750g / 1kg', price: 1000, unit: '/kg', img: 'lever.jpg' },
+      { id: 11, cat: 'mutton', name: 'Spleen (Maneeral)', desc: '₹100–₹300/piece', price: 150, unit: '/pc', img: 'spleen.jpg' },
+      { id: 12, cat: 'mutton', name: 'Lungs', desc: '₹80–₹120/piece', price: 150, unit: '/pc', img: 'lungs.jpg' },
+      { id: 13, cat: 'mutton', name: 'Kidney', desc: 'Available in 250g / 500g / 750g / 1kg', price: 1000, unit: '/kg', img: 'kidney.jpg' },
+      { id: 14, cat: 'mutton', name: 'Paya', desc: '₹350–₹450/set – trotters', price: 400, unit: '/set', img: 'paya.jpg' },
+      { id: 15, cat: 'mutton', name: 'Head Meat (with bone)', desc: '1kg', price: 600, unit: '/kg', img: 'headmeat-bone.jpg' },
+      { id: 16, cat: 'mutton', name: 'Head Meat (without bone)', desc: '1kg', price: 900, unit: '/kg', img: 'headmeat-nobone.jpg' },
+      // CHICKEN
+      { id: 17, cat: 'chicken', name: 'Chicken – With Skin', desc: 'Fresh, farm-raised chicken', price: 330, unit: '/kg', img: 'chicken-skin.jpg' },
+      { id: 18, cat: 'chicken', name: 'Chicken – Without Skin', desc: 'Skinless, clean cut', price: 380, unit: '/kg', img: 'chicken-noskin.jpg' },
+      { id: 19, cat: 'chicken', name: 'Boneless Chicken', desc: '500g ₹300 / 1kg ₹550', price: 550, unit: '/kg', img: 'chicken-boneless.jpg' },
+      { id: 20, cat: 'chicken', name: 'Chicken Wings', desc: 'Crispy fry-ready', price: 380, unit: '/kg', img: 'wings.jpg' },
+      { id: 21, cat: 'chicken', name: 'Chicken Lollipop', desc: 'Party favourite', price: 380, unit: '/kg', img: 'lollipop.jpg' },
+      { id: 22, cat: 'chicken', name: 'Drumstick (Leg Piece)', desc: 'Juicy leg pieces', price: 380, unit: '/kg', img: 'drumstick.jpg' },
+      // FRUITS
+      { id: 23, cat: 'fruit', name: 'Watermelon', desc: 'Fresh, ripe & sweet', price: 90, unit: '/pc', img: 'watermelon.jpg' },
+      { id: 24, cat: 'fruit', name: 'Pineapple', desc: 'Golden ripe', price: 110, unit: '/pc', img: 'pineapple.jpg' },
+      { id: 25, cat: 'fruit', name: 'Orange', desc: 'Juicy & fresh', price: 120, unit: '/kg', img: 'orange.jpg' },
+      // SERVICES
+      { id: 26, cat: 'service', name: 'Shamiyana Tent', desc: 'Tent rental for events & gatherings', price: 0, unit: 'Call for quote', img: 'tent.jpg' },
+      { id: 27, cat: 'service', name: 'Decoration', desc: 'Event decoration services', price: 0, unit: 'Call for quote', img: 'decoration.jpg' },
+      { id: 28, cat: 'service', name: 'Cooking Vessels', desc: 'Vessel rental for large gatherings', price: 0, unit: 'Call for quote', img: 'vessels.jpg' },
+      { id: 29, cat: 'service', name: 'Event Management', desc: 'Full event planning & coordination', price: 0, unit: 'Call for quote', img: 'events.jpg' },
+      { id: 30, cat: 'service', name: 'Cleaners', desc: 'Professional cleaning services', price: 0, unit: 'Call for quote', img: 'cleaners.jpg' },
+    ];
+
+    const badgeClass = { mutton: 'badge-mutton', chicken: 'badge-chicken', fruit: 'badge-fruit', service: 'badge-service' };
+
+    // ─── STATE ───
+    let cart = JSON.parse(localStorage.getItem('rpCart') || '[]');
+    let currentCat = 'all';
+
+    // ─── RENDER PRODUCTS ───
+    function renderProducts(cat) {
+      const grid = document.getElementById('productGrid');
+      const filtered = cat === 'all' ? products : products.filter(p => p.cat === cat);
+      grid.innerHTML = filtered.map(p => {
+        const priceDisplay = p.price > 0 ? `₹${p.price.toLocaleString('en-IN')}` : '';
+        return `
+          <div class="product-card" data-id="${p.id}">
+            <div class="product-img">
+              <img src="images/${p.img}" alt="${p.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+              ${p.badge ? `<span class="badge ${badgeClass[p.cat]}">${p.badge}</span>` : ''}
+            </div>
+            <div class="product-body">
+              <div class="product-name">${p.name}</div>
+              <div class="product-desc">${p.desc}</div>
+              <div class="product-footer">
+                <div class="product-price">${priceDisplay} <small>${p.unit}</small></div>
+                <button class="add-btn" onclick="addToCart(${p.id})" title="Add to cart">+</button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // ─── CATEGORY TABS ───
+    document.getElementById('categoryTabs').addEventListener('click', e => {
+      const btn = e.target.closest('.cat-tab');
+      if (!btn) return;
+      document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      currentCat = btn.dataset.cat;
+      renderProducts(currentCat);
+    });
+
+    // ─── CART ───
+    function updateCart() {
+      const count = cart.reduce((s, i) => s + i.qty, 0);
+      document.getElementById('cartCount').textContent = count;
+      localStorage.setItem('rpCart', JSON.stringify(cart));
+
+      const panel = document.getElementById('cartItems');
+      const footer = document.getElementById('cartFooter');
+      if (cart.length === 0) {
+        panel.innerHTML = `<div class="cart-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><p style="font-size: 0.9rem;">Your cart is empty</p><p style="font-size: 0.78rem; color: var(--text-muted);">Add products to get started</p></div>`;
+        footer.style.display = 'none';
+        return;
+      }
+      footer.style.display = 'flex';
+      let total = 0;
+      panel.innerHTML = cart.map(item => {
+        const p = products.find(x => x.id === item.id);
+        if (!p) return '';
+        total += p.price * item.qty;
+        return `
+          <div class="cart-item">
+            <div class="cart-item-info">
+              <div class="cart-item-name">${p.name}</div>
+              <div class="cart-item-price">₹${p.price.toLocaleString('en-IN')} ${p.unit}</div>
+            </div>
+            <div class="cart-item-qty">
+              <button onclick="changeQty(${item.id}, -1)">−</button>
+              <span>${item.qty}</span>
+              <button onclick="changeQty(${item.id}, 1)">+</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+      document.getElementById('cartTotal').textContent = `₹${total.toLocaleString('en-IN')}`;
+    }
+
+    function addToCart(id) {
+      const p = products.find(x => x.id === id);
+      if (!p || p.price === 0) {
+        // Service items — open WhatsApp directly
+        window.open(`https://wa.me/919840951202?text=Hi%20Royal%20Proteins!%20I%27m%20interested%20in%20${encodeURIComponent(p.name)}.%20Please%20share%20details.`, '_blank');
+        return;
+      }
+      const existing = cart.find(i => i.id === id);
+      if (existing) { existing.qty++; }
+      else { cart.push({ id, qty: 1 }); }
+      updateCart();
+      // subtle animation on cart button
+      const ct = document.getElementById('cartToggle');
+      ct.style.transform = 'scale(1.15)';
+      setTimeout(() => ct.style.transform = '', 200);
+    }
+
+    function changeQty(id, delta) {
+      const item = cart.find(i => i.id === id);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+      updateCart();
+    }
+
+    // ─── CART UI ───
+    document.getElementById('cartToggle').addEventListener('click', () => {
+      document.getElementById('cartPanel').classList.add('open');
+      document.getElementById('overlay').classList.add('show');
+    });
+    document.getElementById('cartClose').addEventListener('click', closeCart);
+    document.getElementById('overlay').addEventListener('click', closeCart);
+    function closeCart() {
+      document.getElementById('cartPanel').classList.remove('open');
+      document.getElementById('overlay').classList.remove('show');
+    }
+
+    // ─── WHATSAPP CHECKOUT ───
+    document.getElementById('cartCheckout').addEventListener('click', () => {
+      if (cart.length === 0) return;
+      const lines = cart.map(item => {
+        const p = products.find(x => x.id === item.id);
+        return `• ${p.name} x${item.qty} = ₹${(p.price * item.qty).toLocaleString('en-IN')}`;
+      });
+      const total = cart.reduce((s, i) => s + (products.find(x => x.id === i.id)?.price || 0) * i.qty, 0);
+      const msg = `Hi Royal Proteins! I'd like to order:%0A${lines.join('%0A')}%0A%0ATotal: ₹${total.toLocaleString('en-IN')}%0A%0APlease confirm availability & delivery.`;
+      window.open(`https://wa.me/919840951202?text=${msg}`, '_blank');
+    });
+
+    // ─── HEADER SCROLL ───
+    window.addEventListener('scroll', () => {
+      document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ─── HAMBURGER ───
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('nav').classList.toggle('open');
+    });
+    document.querySelectorAll('#nav a').forEach(a => {
+      a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
+    });
+
+    // ─── ACTIVE NAV ───
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        const top = s.offsetTop - 120;
+        if (window.scrollY >= top) current = s.id;
+      });
+      document.querySelectorAll('#nav a:not(.nav-cta)').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === `#${current}`);
+      });
+    });
+
+    // ─── INIT ───
+    renderProducts('all');
+    updateCart();
+  </script>
+
+</body>
+</html>
