@@ -1,0 +1,14 @@
+{
+  "name": "Royal Proteins & Foods",
+  "short_name": "Royal Proteins",
+  "description": "Premium mutton, chicken, fruits & event services in Chennai",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0a04",
+  "theme_color": "#0f0a04",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/images/logo.jpg", "sizes": "192x192", "type": "image/jpeg", "purpose": "any maskable" },
+    { "src": "/images/logo.jpg", "sizes": "512x512", "type": "image/jpeg", "purpose": "any maskable" }
+  ]
+}
