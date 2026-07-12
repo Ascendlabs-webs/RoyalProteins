@@ -15,6 +15,8 @@
 <meta property="og:image" content="images/logo.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","@id":"https://royalproteinsandfoods.com/#business","name":"Royal Proteins & Foods","url":"https://royalproteinsandfoods.com/","image":"https://royalproteinsandfoods.com/api/assets/effc139e-b6e9-42f4-95a2-ef600a3d4348/961a3298388666436cd41c046e8f7071","description":"Premium mutton, chicken, fruits & event services in Chennai.","telephone":"9840951202","address":{"@type":"PostalAddress","addressCountry":"IN","streetAddress":"Vyasarpadi, Chennai, Tamil Nadu","addressLocality":"Chennai","addressRegion":"Tamil Nadu"},"priceRange":"₹₹","taxID":"33BCDPM9152M1ZA","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"09:00","closes":"21:00"}]}</script>
 <style>
@@ -90,6 +92,9 @@ nav.solid{background:rgba(10,10,10,.95);-webkit-backdrop-filter:blur(16px);backd
 .hero-tags span:nth-child(3){animation-delay:4s}
 .hero-tags span:nth-child(4){animation-delay:6s}
 .hero-tags span:nth-child(5){animation-delay:8s}
+.hero-trust{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.hero-trust span{font-size:.7rem;color:rgba(255,255,255,.5);letter-spacing:.04em}
+.hero-trust span:first-child{color:#d4af37}
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,7vw,5rem);font-weight:700;line-height:1.1;margin-bottom:16px}
 .hero h1 span{color:#d4af37}
 .hero p{font-size:clamp(.95rem,1.5vw,1.15rem);color:rgba(255,255,255,.65);max-width:540px;margin:0 auto 32px;line-height:1.7}
@@ -106,7 +111,7 @@ nav.solid{background:rgba(10,10,10,.95);-webkit-backdrop-filter:blur(16px);backd
 .scroll-indicator .mouse div{width:2px;height:6px;background:#d4af37;border-radius:999px;animation:pulse 2s infinite}
 
 /* ─── SECTION ─── */
-section{padding:80px 0;position:relative}
+section{padding:80px 0;position:relative;content-visibility:auto;contain-intrinsic-size:600px}
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
 .section-label{display:inline-flex;align-items:center;gap:6px;font-size:.62rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#d4af37;margin-bottom:10px}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:700;margin-bottom:12px;line-height:1.15}
@@ -233,7 +238,7 @@ section{padding:80px 0;position:relative}
 .hours-row .day{color:rgba(255,255,255,.5)}
 .hours-row .time{font-weight:500}
 .hours-row.highlight .day,.hours-row.highlight .time{color:#d4af37}
-.contact-form input,.contact-form select,.contact-form textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:14px 16px;color:#fff;font-family:'Montserrat',sans-serif;font-size:.85rem;transition:all .3s;outline:none;box-sizing:border-box}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:14px 16px;color:#fff;font-family:'Montserrat',sans-serif;font-size:16px;transition:all .3s;outline:none;box-sizing:border-box}
 .contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,.3)}
 .contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:#8b1a1a;background:rgba(139,26,26,.06)}
 .contact-form select option{background:#0a0a0a;color:#fff}
@@ -257,7 +262,7 @@ footer .hours .gold{color:#d4af37}
 .footer-bottom .legal button:hover{color:#d4af37}
 
 /* ─── CART ─── */
-.cart-fab{position:fixed;bottom:24px;right:24px;z-index:40;width:56px;height:56px;border-radius:50%;border:none;background:#8b1a1a;color:#fff;cursor:pointer;font-size:1.2rem;display:grid;place-items:center;box-shadow:0 4px 20px rgba(139,26,26,.4);transition:all .3s}
+.cart-fab{position:fixed;bottom:24px;right:24px;z-index:40;width:56px;height:56px;border-radius:50%;border:none;background:#8b1a1a;color:#fff;cursor:pointer;font-size:1.2rem;display:grid;place-items:center;box-shadow:0 4px 20px rgba(139,26,26,.4);transition:all .3s;will-change:transform}
 .cart-fab:hover{transform:scale(1.06)}
 .cart-fab .count{position:absolute;top:-4px;right:-4px;width:22px;height:22px;border-radius:50%;background:#22c55e;color:#fff;font-size:.6rem;font-weight:700;display:grid;place-items:center;border:2px solid #0a0a0a}
 .cart-panel{position:fixed;bottom:0;right:0;z-index:60;width:100%;max-width:400px;height:80vh;background:#14100a;border:1px solid rgba(255,255,255,.08);border-radius:8px 8px 0 0;transform:translateY(110%);transition:transform .4s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column}
@@ -285,6 +290,35 @@ footer .hours .gold{color:#d4af37}
 .toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);z-index:70;background:#14100a;border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:10px 20px;font-size:.82rem;font-weight:500;box-shadow:0 8px 24px rgba(0,0,0,.4);opacity:0;transition:all .35s;pointer-events:none;display:flex;align-items:center;gap:8px;white-space:nowrap}
 .toast.show{opacity:1}
 
+/* ─── PROGRESS BAR ─── */
+.progress-bar{position:fixed;top:0;left:0;z-index:100;width:0;height:2px;background:linear-gradient(90deg,#8b1a1a,#d4af37);transition:width .1s linear}
+/* ─── BACK TO TOP ─── */
+.btt{position:fixed;bottom:90px;right:24px;z-index:39;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.1);background:rgba(10,10,10,.8);color:rgba(255,255,255,.6);cursor:pointer;font-size:1.1rem;display:grid;place-items:center;opacity:0;pointer-events:none;transition:all .4s;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.btt.show{opacity:1;pointer-events:auto}
+.btt:hover{color:#d4af37;border-color:#d4af37;transform:translateY(-3px)}
+/* ─── PAGE TRANSITION ─── */
+.page-transition{position:fixed;inset:0;z-index:200;background:#0a0a0a;opacity:0;pointer-events:none;transition:opacity .3s}
+.page-transition.active{opacity:1;pointer-events:auto}
+/* ─── QUANTITY IN MODAL ─── */
+.pmodal-qty{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:16px}
+.pmodal-qty button{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.12);background:transparent;color:#fff;cursor:pointer;font-size:1.2rem;display:grid;place-items:center;transition:all .2s;font-family:'Montserrat',sans-serif}
+.pmodal-qty button:hover{background:rgba(139,26,26,.15);border-color:#8b1a1a}
+.pmodal-qty span{min-width:32px;text-align:center;font-size:1.3rem;font-weight:700;color:#d4af37}
+/* ─── LIGHTBOX ─── */
+.lightbox{position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.92);opacity:0;pointer-events:none;transition:opacity .35s;display:flex;align-items:center;justify-content:center}
+.lightbox.open{opacity:1;pointer-events:auto}
+.lightbox img{max-width:92vw;max-height:88vh;object-fit:contain;border-radius:4px;transform:scale(.9);transition:transform .35s}
+.lightbox.open img{transform:scale(1)}
+.lightbox-close{position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:50%;border:none;background:rgba(255,255,255,.1);color:#fff;cursor:pointer;font-size:1.3rem;display:grid;place-items:center;transition:background .2s}
+.lightbox-close:hover{background:rgba(255,255,255,.2)}
+/* ─── CART ANIMATION ─── */
+.cart-fly{position:fixed;z-index:90;width:48px;height:48px;border-radius:50%;object-fit:cover;pointer-events:none;transition:all .6s cubic-bezier(.22,1,.36,1);opacity:0}
+.cart-fly.active{opacity:1}
+/* ─── COUNTER ─── */
+.counter{display:inline-block}
+/* ─── SEARCH INFO ─── */
+.search-info{font-size:.72rem;color:rgba(255,255,255,.35);margin-top:8px;text-align:center}
+
 /* ─── RESPONSIVE ─── */
 @media(max-width:1024px){
   .featured-grid,.exp-grid{grid-template-columns:repeat(2,1fr)}
@@ -296,10 +330,10 @@ footer .hours .gold{color:#d4af37}
   .featured-grid,.exp-grid{grid-template-columns:1fr}
   .menu-grid{grid-template-columns:1fr}
   .menu-card{padding:14px}
-  .menu-card-img{width:72px;height:72px}
-  .menu-card-name{font-size:1rem}
+  .menu-card-img{width:72px;height:72px;flex-shrink:0}
+  .menu-card-name{font-size:.95rem}
   .about-grid{grid-template-columns:1fr;gap:30px}
-  .about-visual{height:260px}
+  .about-visual{height:220px}
   .gallery-grid{grid-template-columns:repeat(2,1fr)}
   .gallery-item:first-child{grid-column:span 1;grid-row:span 1}
   .reviews-grid{grid-template-columns:1fr}
@@ -308,32 +342,78 @@ footer .hours .gold{color:#d4af37}
   .footer-grid{grid-template-columns:1fr;text-align:center}
   footer .desc{margin:10px auto}
   footer .links button{text-align:center}
-  .hero h1{font-size:2rem}
+  .hero h1{font-size:clamp(1.6rem,6vw,2.2rem)}
+  .hero p{font-size:.85rem}
+  .hero-badge{font-size:.58rem}
+  .hero-tags span{font-size:.58rem;padding:4px 10px}
+  .hero-trust span{font-size:.62rem}
   .hero-btns{flex-direction:column;align-items:center}
-  .hero-btns .btn{width:100%;max-width:300px;justify-content:center}
-  section{padding:50px 0}
+  .hero-btns .btn{width:100%;max-width:320px;justify-content:center}
+  section{padding:40px 0}
+  .section-title{font-size:clamp(1.5rem,5vw,2rem)}
   .cart-panel{max-width:100%;height:85vh}
   .about-stats{grid-template-columns:repeat(3,1fr)}
-}
-@media(max-width:400px){
-  .about-stats{grid-template-columns:1fr}
-  .container{padding:0 16px}
+  #menuCats{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  #menuCats::-webkit-scrollbar{display:none}
+  #menuCats .btn{white-space:nowrap;flex-shrink:0}
+  .toolbar{flex-direction:column}
+  .toolbar input{min-width:0;width:100%;box-sizing:border-box;font-size:16px}
+  .pmodal-qty button{width:44px;height:44px}
+  .review-card{padding:18px}
 }
 @media(max-width:480px){
-  .pmodal{max-width:100%;width:100%;max-height:100vh;height:100%;border-radius:0;top:0;left:0;transform:translate(0,0) scale(.92)}
+  .pmodal{max-width:100%;width:100%;max-height:100dvh;height:100dvh;border-radius:0;top:0;left:0;transform:translate(0,0) scale(.95)}
   .pmodal.open{transform:translate(0,0) scale(1)}
-  .pmodal-img{aspect-ratio:auto;max-height:40vh;object-fit:contain;background:#0a0a0a}
-  .pmodal-body{padding:16px;padding-bottom:24px}
+  .pmodal-img{aspect-ratio:auto;max-height:35vh;object-fit:contain;background:#0a0a0a}
+  .pmodal-body{padding:16px;padding-bottom:32px}
   .pmodal-variants{gap:10px}
-  .pmodal-variant{padding:14px 16px}
-  .pmodal-variant .label{font-size:.95rem}
-  .pmodal-variant .price{font-size:1rem}
-  .pmodal-add{padding:16px;font-size:.95rem}
-  .cart-panel{max-width:100%;height:100vh;border-radius:0;top:0}
-  .cart-item{padding:14px 0}
-  .cart-item-qty button{width:36px;height:36px;font-size:1rem}
-  .cart-checkout{padding:16px;font-size:.95rem}
-  .cart-fab{width:60px;height:60px;font-size:1.4rem;bottom:16px;right:16px}
+  .pmodal-variant{padding:14px 16px;min-height:48px}
+  .pmodal-variant .label{font-size:.92rem}
+  .pmodal-variant .price{font-size:.95rem}
+  .pmodal-add{padding:16px;font-size:.95rem;min-height:52px}
+  .pmodal-close{width:40px;height:40px;font-size:1.3rem}
+  .pmodal-qty button{width:44px;height:44px;font-size:1.3rem}
+  .pmodal-qty span{font-size:1.2rem;min-width:36px}
+  .cart-panel{max-width:100%;width:100%;height:100dvh;border-radius:0;top:0;left:0;transform:translateY(100%)}
+  .cart-panel.open{transform:translateY(0)}
+  .cart-item{padding:14px 0;min-height:52px}
+  .cart-item-qty button{width:40px;height:40px;font-size:1.1rem}
+  .cart-checkout{padding:16px;font-size:.92rem;min-height:52px}
+  .cart-fab{width:56px;height:56px;font-size:1.3rem;bottom:16px;right:16px}
+  .btt{bottom:84px;right:16px;width:40px;height:40px}
+  .featured-card-img{height:180px}
+  .btn{padding:14px 28px;font-size:.75rem}
+  .hero-content{padding:80px 16px 40px}
+  .hero-tags{gap:6px}
+  .hero-tags span{font-size:.55rem;padding:4px 10px}
+  .hero-trust{gap:10px}
+  .hero-trust span{font-size:.6rem}
+  .exp-grid{gap:24px}
+  .contact-item .val{font-size:.82rem}
+  .footer-grid{gap:24px}
+  .hours-box{padding:16px}
+  .pmodal-name{font-size:1.15rem}
+  .pmodal-desc{font-size:.78rem}
+  .pmodal-call a{font-size:.78rem}
+}
+@media(max-width:380px){
+  .hero h1{font-size:clamp(1.3rem,5vw,1.6rem)}
+  .hero-tags span{font-size:.5rem;padding:3px 8px}
+  .hero-trust span{font-size:.55rem}
+  .menu-card{padding:10px;gap:10px}
+  .menu-card-img{width:60px;height:60px}
+  .about-stats{grid-template-columns:1fr}
+  .container{padding:0 12px}
+  .section-title{font-size:1.3rem}
+}
+/* ─── REDUCED MOTION ─── */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .hero-bg img{animation:none;opacity:.3}
+  .hero-bg img:nth-child(1){opacity:.3}
+  .hero-bg img:nth-child(2),.hero-bg img:nth-child(3),.hero-bg img:nth-child(4){display:none}
+  .hero-particles{display:none}
+  .cart-fly{display:none}
 }
 </style>
 </head>
@@ -383,20 +463,25 @@ footer .hours .gold{color:#d4af37}
       <span></span><span></span><span></span><span></span><span></span>
     </div>
     <div class="hero-content">
-      <div class="hero-badge"><span class="hero-badge-dot"></span> Chennai's Trusted Meat Store</div>
-      <h1 style="opacity:0;animation:fadeInUp .8s ease-out .2s forwards">Good Food, <span>Good Moments</span></h1>
+      <div class="hero-badge"><span class="hero-badge-dot"></span> Chennai's Trusted Meat Store — Est. 2010</div>
+      <h1 style="opacity:0;animation:fadeInUp .8s ease-out .2s forwards">Farm-Fresh Meat, <span>Delivered to Your Door</span></h1>
       <div class="hero-divider" style="opacity:0;animation:fadeInUp .8s ease-out .3s forwards"></div>
-      <p style="opacity:0;animation:fadeInUp .8s ease-out .4s forwards">Premium quality mutton, chicken, fresh fruits and event services in Vyasarpadi, Chennai. Order online for delivery &amp; pickup.</p>
+      <p style="opacity:0;animation:fadeInUp .8s ease-out .4s forwards">Premium quality mutton, chicken, fresh juices &amp; event services in Vyasarpadi, Chennai. Order now for same-day delivery.</p>
       <div class="hero-tags" style="opacity:0;animation:fadeInUp .8s ease-out .5s forwards">
-        <span>Premium Mutton</span>
-        <span>Fresh Chicken</span>
-        <span>Fresh Fruits</span>
-        <span>Event Services</span>
-        <span>Fresh Juices</span>
+        <span>🐑 Premium Mutton</span>
+        <span>🍗 Fresh Chicken</span>
+        <span>🍉 Fresh Fruits</span>
+        <span>🧃 Fresh Juices</span>
+        <span>🎪 Event Services</span>
       </div>
       <div class="hero-btns" style="opacity:0;animation:fadeInUp .8s ease-out .6s forwards">
-        <button class="btn btn-primary" onclick="navigate('menu')">Explore Menu</button>
-        <a href="https://wa.me/919840951202?text=Hi%20Royal%20Proteins!%20I%27d%20like%20to%20place%20an%20order" target="_blank" class="btn btn-whatsapp">Order on WhatsApp</a>
+        <button class="btn btn-primary" onclick="navigate('menu')">🛒 Order Now</button>
+        <a href="https://wa.me/919840951202?text=Hi%20Royal%20Proteins!%20I'd%20like%20to%20place%20an%20order" target="_blank" class="btn btn-whatsapp">💬 Order on WhatsApp</a>
+      </div>
+      <div class="hero-trust" style="opacity:0;animation:fadeInUp .8s ease-out .7s forwards">
+        <span>★ 200+ Happy Customers</span>
+        <span>✦ 15+ Years of Trust</span>
+        <span>✓ Free Delivery</span>
       </div>
     </div>
     <div class="scroll-indicator" style="opacity:0;animation:fadeInUp .8s ease-out .8s forwards">
@@ -526,11 +611,11 @@ footer .hours .gold{color:#d4af37}
           <h2>A Legacy of Quality</h2>
           <p>Based in Vyasarpadi, Chennai, Royal Proteins & Foods is a family-run business dedicated to providing the finest quality mutton, chicken, and fresh fruits at fair prices. Every cut is carefully prepared to ensure freshness and hygiene.</p>
           <p>Beyond retail meats, we offer event services including Shamiyana tent rental, decorations, cooking vessels, and professional cleaners — making us a one-stop shop for your gatherings and daily needs.</p>
-          <div class="about-stats">
-            <div class="about-stat"><div class="num">50+</div><div class="label">Products</div></div>
-            <div class="about-stat"><div class="num">15+</div><div class="label">Years</div></div>
-            <div class="about-stat"><div class="num">100%</div><div class="label">Fresh</div></div>
-          </div>
+            <div class="about-stats">
+              <div class="about-stat"><div class="num"><span class="counter" data-target="50" data-suffix="+">0+</span></div><div class="label">Products</div></div>
+              <div class="about-stat"><div class="num"><span class="counter" data-target="15" data-suffix="+">0+</span></div><div class="label">Years</div></div>
+              <div class="about-stat"><div class="num"><span class="counter" data-target="100" data-suffix="%">0%</span></div><div class="label">Fresh</div></div>
+            </div>
         </div>
       </div>
       <div style="margin-top:60px;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px" data-reveal>
@@ -622,7 +707,7 @@ footer .hours .gold{color:#d4af37}
             <div style="margin-bottom:14px"><input type="text" placeholder="Your Name" required></div>
             <div style="margin-bottom:14px"><input type="email" placeholder="Email Address" required></div>
             <div style="margin-bottom:14px"><input type="tel" placeholder="Phone Number" required></div>
-            <div style="margin-bottom:14px"><textarea rows="4" placeholder="Your Message" required style="width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:14px 16px;color:#fff;font-family:'Montserrat',sans-serif;font-size:.85rem;outline:none;resize:vertical;box-sizing:border-box"></textarea></div>
+            <div style="margin-bottom:14px"><textarea rows="4" placeholder="Your Message" required style="width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:14px 16px;color:#fff;font-family:'Montserrat',sans-serif;font-size:16px;outline:none;resize:vertical;box-sizing:border-box"></textarea></div>
             <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px">Send Message</button>
           </form>
         </div>
@@ -692,6 +777,11 @@ footer .hours .gold{color:#d4af37}
     <div class="pmodal-name" id="pmodalName"></div>
     <div class="pmodal-desc" id="pmodalDesc"></div>
     <div class="pmodal-variants" id="pmodalVariants"></div>
+    <div class="pmodal-qty" id="pmodalQty">
+      <button onclick="changeModalQty(-1)">−</button>
+      <span id="pmodalQtyVal">1</span>
+      <button onclick="changeModalQty(1)">+</button>
+    </div>
     <button class="pmodal-add" id="pmodalAdd" onclick="handleAddToCart()">💬 Add to Order</button>
     <div class="pmodal-call" id="pmodalCall"><a href="tel:9840951202">📞 Call for details</a></div>
   </div>
@@ -720,6 +810,14 @@ footer .hours .gold{color:#d4af37}
 </div>
 
 <div class="toast" id="toast"></div>
+
+<div class="progress-bar" id="progressBar"></div>
+<button class="btt" id="btt" onclick="scrollToTop()" aria-label="Back to top">↑</button>
+<div class="page-transition" id="pageTransition"></div>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
 
 <script>
 // ─── PRODUCT DATA ───
@@ -786,23 +884,28 @@ let menuQ = '';
 // ─── NAVIGATION ───
 function navigate(page) {
   if (page === currentPage) return;
-  document.querySelectorAll('.page.active').forEach(p => {
-    p.classList.remove('active');
-    p.classList.add('hidden');
-  });
-  const next = document.getElementById('page-'+page);
-  next.classList.remove('hidden');
-  next.classList.add('active');
-  currentPage = page;
-  // update nav
-  document.querySelectorAll('#navLinks a:not(.nav-cta)').forEach(a => {
-    const txt = a.textContent.trim().toLowerCase();
-    a.classList.toggle('active', txt === page);
-  });
-  closeMobileMenu();
-  window.scrollTo({top:0});
-  setTimeout(reveal, 150);
-  if (page === 'menu') renderMenu();
+  const trans = document.getElementById('pageTransition');
+  trans.classList.add('active');
+  setTimeout(() => {
+    document.querySelectorAll('.page.active').forEach(p => {
+      p.classList.remove('active');
+      p.classList.add('hidden');
+    });
+    const next = document.getElementById('page-'+page);
+    next.classList.remove('hidden');
+    next.classList.add('active');
+    currentPage = page;
+    document.querySelectorAll('#navLinks a:not(.nav-cta)').forEach(a => {
+      const txt = a.textContent.trim().toLowerCase();
+      a.classList.toggle('active', txt === page);
+    });
+    closeMobileMenu();
+    window.scrollTo({top:0});
+    setTimeout(reveal, 100);
+    if (page === 'menu') renderMenu();
+    if (page === 'about') initCounters();
+    setTimeout(() => trans.classList.remove('active'), 250);
+  }, 200);
 }
 
 function toggleMobileMenu() {
@@ -880,6 +983,7 @@ function openPmodal(id) {
   if (!p) return;
   selectedPid = id;
   selectedVariant = null;
+  document.getElementById('pmodalQtyVal').textContent = '1';
   document.getElementById('pmodalImg').src = 'images/'+p.img;
   document.getElementById('pmodalName').textContent = p.name;
   document.getElementById('pmodalDesc').textContent = p.desc;
@@ -935,7 +1039,9 @@ function handleAddToCart() {
   const p = products.find(x => x.id === selectedPid);
   if (!p) return;
   if (!selectedVariant) return;
-  addToCart(selectedPid, selectedVariant);
+  const qty = parseInt(document.getElementById('pmodalQtyVal').textContent) || 1;
+  for (let i = 0; i < qty; i++) addToCart(selectedPid, selectedVariant);
+  cartFlyAnimation(p.img);
   closePmodal();
 }
 
@@ -1038,6 +1144,85 @@ function handleContactForm(e) {
   window.open(`https://wa.me/919840951202?text=Hi%20Royal%20Proteins!%20My%20name%20is%20${encodeURIComponent(name)}.%20${encodeURIComponent(msg)}`,'_blank');
   return false;
 }
+
+// ─── QUANTITY IN MODAL ───
+function changeModalQty(delta) {
+  const el = document.getElementById('pmodalQtyVal');
+  let v = parseInt(el.textContent) || 1;
+  v = Math.max(1, Math.min(99, v + delta));
+  el.textContent = v;
+}
+
+// ─── CART FLY ANIMATION ───
+function cartFlyAnimation(imgSrc) {
+  const el = document.createElement('img');
+  el.className = 'cart-fly active';
+  el.src = 'images/'+imgSrc;
+  document.body.appendChild(el);
+  const modal = document.getElementById('pmodal');
+  const fab = document.getElementById('cartFab');
+  const mr = modal.getBoundingClientRect();
+  const fr = fab.getBoundingClientRect();
+  el.style.left = (mr.left + mr.width/2 - 24) + 'px';
+  el.style.top = (mr.top + mr.height/2 - 24) + 'px';
+  requestAnimationFrame(() => {
+    el.style.left = (fr.left + fr.width/2 - 14) + 'px';
+    el.style.top = (fr.top + fr.height/2 - 14) + 'px';
+    el.style.width = '28px';
+    el.style.height = '28px';
+    el.style.borderRadius = '50%';
+  });
+  setTimeout(() => el.remove(), 700);
+}
+
+// ─── BACK TO TOP ───
+function scrollToTop() { window.scrollTo({top:0,behavior:'smooth'}); }
+
+// ─── LIGHTBOX ───
+function openLightbox(src) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('lightbox').addEventListener('click', e => {
+  if (e.target === e.currentTarget || e.target.classList.contains('lightbox-close')) closeLightbox();
+});
+
+// ─── COUNTER ANIMATION ───
+function initCounters() {
+  document.querySelectorAll('.counter').forEach(el => {
+    const target = parseInt(el.dataset.target);
+    if (!target || el.dataset.counted) return;
+    el.dataset.counted = '1';
+    const dur = 1500, steps = 30;
+    const step = target / steps;
+    let cur = 0, i = 0;
+    const iv = setInterval(() => {
+      i++;
+      cur = Math.min(target, Math.round(step * i));
+      el.textContent = cur + (el.dataset.suffix||'');
+      if (cur >= target) clearInterval(iv);
+    }, dur / steps);
+  });
+}
+
+// ─── SCROLL EVENTS ───
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  const h = document.documentElement.scrollHeight - window.innerHeight;
+  document.getElementById('progressBar').style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+  document.getElementById('btt').classList.toggle('show', y > 400);
+});
+
+// ─── GALLERY CLICK → LIGHTBOX ───
+document.addEventListener('click', e => {
+  const gi = e.target.closest('.gallery-item img');
+  if (gi) openLightbox(gi.src);
+});
 
 // ─── SERVICE WORKER ───
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
