@@ -2,13 +2,13 @@
 <html lang="en-IN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0a0a0a">
-<meta name="description" content="Royal Proteins & Foods – Premium mutton, chicken, fresh fruits & event services in Vyasarpadi, Chennai. Good Food, Good Moments.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="Royal Proteins & Foods – Premium mutton, chicken, fresh fruits & event services in Vyasarpadi, Chennai. Since 2010.">
 <title>Royal Proteins & Foods – Premium Meat & Food Store, Chennai</title>
 <link rel="canonical" href="https://royalproteinsandfoods.com/">
 <meta property="og:title" content="Royal Proteins & Foods – Chennai">
-<meta property="og:description" content="Premium mutton, chicken, fresh fruits & event services. Order online in Vyasarpadi, Chennai.">
+<meta property="og:description" content="Premium mutton, chicken, fresh fruits & event services. Since 2010.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://royalproteinsandfoods.com/">
 <meta property="og:locale" content="en_IN">
@@ -17,307 +17,339 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","@id":"https://royalproteinsandfoods.com/#business","name":"Royal Proteins & Foods","url":"https://royalproteinsandfoods.com/","image":"https://royalproteinsandfoods.com/api/assets/effc139e-b6e9-42f4-95a2-ef600a3d4348/961a3298388666436cd41c046e8f7071","description":"Premium mutton, chicken, fruits & event services in Chennai.","telephone":"9840951202","address":{"@type":"PostalAddress","addressCountry":"IN","streetAddress":"Vyasarpadi, Chennai, Tamil Nadu","addressLocality":"Chennai","addressRegion":"Tamil Nadu"},"priceRange":"₹₹","taxID":"33BCDPM9152M1ZA","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"09:00","closes":"21:00"}]}</script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","@id":"https://royalproteinsandfoods.com/#business","name":"Royal Proteins & Foods","url":"https://royalproteinsandfoods.com/","image":"https://royalproteinsandfoods.com/api/assets/effc139e-b6e9-42f4-95a2-ef600a3d4348/961a3298388666436cd41c046e8f7071","description":"Premium mutton, chicken, fruits & event services.","telephone":"9840951202","address":{"@type":"PostalAddress","addressCountry":"IN","streetAddress":"Vyasarpadi, Chennai, Tamil Nadu","addressLocality":"Chennai","addressRegion":"Tamil Nadu"},"priceRange":"₹₹","taxID":"33BCDPM9152M1ZA","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"09:00","closes":"21:00"}]}</script>
 <style>
-*{scroll-behavior:smooth;-webkit-tap-highlight-color:rgba(139,26,26,.2)}
-body{margin:0;padding:0;font-family:'Montserrat',sans-serif;background:#0a0a0a;color:#fff;-webkit-font-smoothing:antialiased}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#050505;color:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
-::selection{background:#8b1a1a;color:#fff}
+::selection{background:#D4AF37;color:#050505}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#050505}
+::-webkit-scrollbar-thumb{background:rgba(212,175,55,.3);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:rgba(212,175,55,.5)}
 
+/* ─── FONTS ─── */
+h1,h2,h3,h4,.logo,.section-title,.menu-card-name,.pmodal-name,.hero-badge,.gold-text{font-family:'Cinzel',serif}
+.script-text{font-family:'Cormorant Garamond',serif;font-style:italic}
+
+/* ─── KEYFRAMES ─── */
 @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-@keyframes heroBgFade{0%,5%{opacity:0;transform:scale(1.1)}10%,22%{opacity:.35;transform:scale(1)}25%,100%{opacity:0;transform:scale(1.1)}}
-@keyframes particleFloat{0%{opacity:0;transform:translateY(0)}20%{opacity:.5}80%{opacity:.5}100%{opacity:0;transform:translateY(-250px)}}
-@keyframes heroTagFade{0%,15%{opacity:0;transform:translateY(8px)}20%,35%{opacity:1;transform:translateY(0)}40%,100%{opacity:0;transform:translateY(-8px)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@keyframes shimmer{0%{background-position:-200% center}100%{background-position:200% center}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes heroBgFade{0%,5%{opacity:0;transform:scale(1.1)}12%,25%{opacity:.25;transform:scale(1)}28%,100%{opacity:0;transform:scale(1.1)}}
+@keyframes particleFloat{0%{opacity:0;transform:translateY(0) scale(1)}20%{opacity:.4}80%{opacity:.3}100%{opacity:0;transform:translateY(-300px) scale(.5)}}
+@keyframes goldShimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
 
-.animate-fade{animation:fadeInUp .8s ease-out forwards}
-.animate-pulse{animation:pulse 2s infinite}
-.animate-bounce{animation:bounce 2s infinite}
+/* ─── LAYOUT ─── */
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+section{padding:100px 0;position:relative;content-visibility:auto;contain-intrinsic-size:600px}
+.section-label{font-family:'Cinzel',serif;font-size:.6rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:#D4AF37;margin-bottom:12px;opacity:.8}
+.section-title{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;margin-bottom:16px;line-height:1.2;letter-spacing:.02em}
+.section-title span{color:#D4AF37}
+.section-sub{font-family:'Inter',sans-serif;color:#C9C9C9;font-size:.9rem;max-width:540px;line-height:1.8;font-weight:300;letter-spacing:.02em}
+.section-head{text-align:center;margin-bottom:60px}
+.section-head .section-sub{margin:0 auto}
+.gold-divider{width:60px;height:1px;background:linear-gradient(90deg,transparent,#D4AF37,transparent);margin:12px auto}
+.gold-divider-left{width:40px;height:1px;background:linear-gradient(90deg,#D4AF37,transparent);margin:12px 0}
 
 /* ─── NAV ─── */
-nav.fixed{position:fixed;top:0;left:0;right:0;z-index:50;transition:all .5s}
-nav.fixed .inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}
-nav.transparent{background:transparent;padding:20px 0}
-nav.solid{background:rgba(10,10,10,.95);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06)}
-.logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;letter-spacing:.01em;cursor:pointer;display:flex;align-items:center;gap:10px;transition:opacity .3s}
-.logo:hover{opacity:.8}
-.logo img{width:34px;height:34px;border-radius:6px;object-fit:cover}
-.logo span{color:#d4af37}
-.nav-links{display:flex;align-items:center;gap:4px}
-.nav-links a{font-size:.72rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;padding:8px 14px;border-radius:6px;color:rgba(255,255,255,.7);transition:all .3s;cursor:pointer}
-.nav-links a:hover{color:#fff;background:rgba(255,255,255,.05)}
-.nav-links a.active{color:#8b1a1a;background:rgba(139,26,26,.12)}
-.nav-cta{background:#8b1a1a!important;color:#fff!important;padding:10px 24px!important;border-radius:4px!important;font-weight:700!important;letter-spacing:.12em!important;margin-left:8px}
-.nav-cta:hover{background:#a31f20!important;color:#fff!important}
-.hamburger{display:none;background:none;border:none;color:#d4af37;cursor:pointer;padding:6px;z-index:60}
-.mobile-menu{position:fixed;inset:0;background:rgba(10,10,10,.98);z-index:55;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;pointer-events:none;transition:all .5s}
+nav.fixed{position:fixed;top:0;left:0;right:0;z-index:50;transition:all .6s}
+nav.fixed .inner{max-width:1280px;margin:0 auto;padding:0 32px;display:flex;justify-content:space-between;align-items:center}
+nav.transparent{background:transparent;padding:24px 0}
+nav.solid{background:rgba(5,5,5,.95);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);padding:14px 0;border-bottom:1px solid rgba(212,175,55,.12)}
+.logo{font-size:1.4rem;font-weight:700;letter-spacing:.08em;cursor:pointer;display:flex;align-items:center;gap:12px;transition:opacity .4s}
+.logo:hover{opacity:.85}
+.logo img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:1px solid rgba(212,175,55,.3)}
+.logo span{color:#D4AF37}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{font-size:.65rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:8px 16px;border-radius:0;color:#C9C9C9;transition:all .4s;cursor:pointer;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:2px;left:50%;width:0;height:1px;background:#D4AF37;transition:all .4s;transform:translateX(-50%)}
+.nav-links a:hover{color:#fff}
+.nav-links a:hover::after{width:60%}
+.nav-links a.active{color:#D4AF37}
+.nav-links a.active::after{width:60%}
+.nav-cta{background:transparent!important;border:1px solid #D4AF37!important;color:#D4AF37!important;padding:10px 24px!important;border-radius:0!important;font-weight:600!important;letter-spacing:.15em!important;margin-left:12px;transition:all .4s!important}
+.nav-cta:hover{background:#D4AF37!important;color:#050505!important}
+.nav-cta::after{display:none!important}
+.hamburger{display:none;background:none;border:none;color:#D4AF37;cursor:pointer;padding:8px;z-index:60}
+.mobile-menu{position:fixed;inset:0;background:rgba(5,5,5,.98);z-index:55;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;opacity:0;pointer-events:none;transition:all .5s}
 .mobile-menu.open{opacity:1;pointer-events:auto}
-.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:rgba(255,255,255,.8);transition:color .3s;cursor:pointer}
-.mobile-menu a:hover{color:#d4af37}
+.mobile-menu a{font-family:'Cinzel',serif;font-size:1.6rem;font-weight:600;color:#C9C9C9;transition:color .4s;cursor:pointer;letter-spacing:.08em}
+.mobile-menu a:hover{color:#D4AF37}
 
 /* ─── PAGE TRANSITION ─── */
-.page{transition:opacity .4s ease}
+.page{transition:opacity .5s ease}
 .page.hidden{opacity:0;pointer-events:none;position:absolute;width:100%;top:0;left:0}
 .page.active{opacity:1;position:relative}
+.page-transition{position:fixed;inset:0;z-index:200;background:#050505;opacity:0;pointer-events:none;transition:opacity .4s}
+.page-transition.active{opacity:1;pointer-events:auto}
+
+/* ─── PROGRESS BAR ─── */
+.progress-bar{position:fixed;top:0;left:0;z-index:100;width:0;height:2px;background:linear-gradient(90deg,#D4AF37,#F6D365,#D4AF37);background-size:200% 100%;animation:goldShimmer 3s linear infinite;transition:width .1s linear}
 
 /* ─── HERO ─── */
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;background:#0a0a0a}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;background:#050505;content-visibility:visible}
 .hero-bg{position:absolute;inset:0;overflow:hidden}
-.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,10,10,.88),rgba(10,10,10,.5) 50%,rgba(10,10,10,.88));z-index:1}
-.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:heroBgFade 24s ease-in-out infinite}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,5,5,.92),rgba(5,5,5,.7) 50%,rgba(5,5,5,.95));z-index:1}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:heroBgFade 28s ease-in-out infinite}
 .hero-bg img:nth-child(1){animation-delay:0s}
-.hero-bg img:nth-child(2){animation-delay:6s}
-.hero-bg img:nth-child(3){animation-delay:12s}
-.hero-bg img:nth-child(4){animation-delay:18s}
+.hero-bg img:nth-child(2){animation-delay:7s}
+.hero-bg img:nth-child(3){animation-delay:14s}
+.hero-bg img:nth-child(4){animation-delay:21s}
+.hero-spotlight{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.06),transparent 70%);top:45%;left:50%;transform:translate(-50%,-50%);pointer-events:none;animation:pulse 8s ease-in-out infinite;z-index:2}
 .hero-particles{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:3}
-.hero-particles span{position:absolute;width:4px;height:4px;background:#d4af37;border-radius:50%;opacity:0;animation:particleFloat 10s ease-in-out infinite}
-.hero-particles span:nth-child(1){left:12%;top:80%;animation-delay:0s;width:3px;height:3px}
-.hero-particles span:nth-child(2){left:28%;top:75%;animation-delay:2s;width:5px;height:5px}
-.hero-particles span:nth-child(3){left:72%;top:82%;animation-delay:4s;width:3px;height:3px}
-.hero-particles span:nth-child(4){left:88%;top:70%;animation-delay:6s;width:4px;height:4px}
-.hero-particles span:nth-child(5){left:50%;top:85%;animation-delay:8s;width:3px;height:3px}
-.hero-glow{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(139,26,26,.15),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;animation:pulse 6s ease-in-out infinite;z-index:2}
-.hero-overlay{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 30% 40%,rgba(139,26,26,.08),transparent),radial-gradient(ellipse 50% 40% at 70% 60%,rgba(139,26,26,.06),transparent);pointer-events:none;z-index:2}
-.hero-content{position:relative;z-index:4;padding:100px 24px 60px;max-width:800px}
-.hero-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 18px;border:1px solid rgba(139,26,26,.35);border-radius:999px;font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#d4af37;margin-bottom:24px;background:rgba(139,26,26,.1)}
-.hero-badge-dot{width:5px;height:5px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite}
-.hero-divider{width:70px;height:2px;background:linear-gradient(90deg,transparent,#d4af37,transparent);margin:0 auto 18px;border-radius:2px}
-.hero-tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
-.hero-tags span{font-size:.62rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 14px;border:1px solid rgba(139,26,26,.25);border-radius:999px;color:rgba(255,255,255,.7);background:rgba(139,26,26,.08);opacity:0;animation:heroTagFade 10s ease-in-out infinite}
-.hero-tags span:nth-child(1){animation-delay:0s}
-.hero-tags span:nth-child(2){animation-delay:2s}
-.hero-tags span:nth-child(3){animation-delay:4s}
-.hero-tags span:nth-child(4){animation-delay:6s}
-.hero-tags span:nth-child(5){animation-delay:8s}
-.hero-trust{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:20px}
-.hero-trust span{font-size:.7rem;color:rgba(255,255,255,.5);letter-spacing:.04em}
-.hero-trust span:first-child{color:#d4af37}
-.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,7vw,5rem);font-weight:700;line-height:1.1;margin-bottom:16px}
-.hero h1 span{color:#d4af37}
-.hero p{font-size:clamp(.95rem,1.5vw,1.15rem);color:rgba(255,255,255,.65);max-width:540px;margin:0 auto 32px;line-height:1.7}
-.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border:none;cursor:pointer;transition:all .3s;font-family:'Montserrat',sans-serif;border-radius:4px}
-.btn-primary{background:#8b1a1a;color:#fff}
-.btn-primary:hover{background:#a31f20;transform:scale(1.03);box-shadow:0 8px 32px rgba(139,26,26,.4)}
-.btn-outline{border:2px solid #8b1a1a;color:#8b1a1a;background:transparent}
-.btn-outline:hover{background:#8b1a1a;color:#fff;transform:scale(1.03)}
-.btn-whatsapp{background:#25D366;color:#fff}
-.btn-whatsapp:hover{background:#1ebe57;transform:scale(1.03)}
-.scroll-indicator{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(212,175,55,.4);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase}
-.scroll-indicator .mouse{width:18px;height:28px;border:2px solid rgba(139,26,26,.4);border-radius:999px;display:flex;justify-content:center;padding-top:5px}
-.scroll-indicator .mouse div{width:2px;height:6px;background:#d4af37;border-radius:999px;animation:pulse 2s infinite}
+.hero-particles span{position:absolute;width:3px;height:3px;background:#D4AF37;border-radius:50%;opacity:0;animation:particleFloat 12s ease-in-out infinite}
+.hero-particles span:nth-child(1){left:10%;top:80%;animation-delay:0s}
+.hero-particles span:nth-child(2){left:25%;top:70%;animation-delay:3s;width:4px;height:4px}
+.hero-particles span:nth-child(3){left:75%;top:85%;animation-delay:6s}
+.hero-particles span:nth-child(4){left:90%;top:65%;animation-delay:9s;width:4px;height:4px}
+.hero-particles span:nth-child(5){left:50%;top:90%;animation-delay:2s}
+.hero-content{position:relative;z-index:4;padding:120px 24px 60px;max-width:900px}
+.hero-crest{width:72px;height:72px;margin:0 auto 28px;border:1px solid rgba(212,175,55,.35);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:1.6rem;color:#D4AF37;letter-spacing:.1em;position:relative;animation:fadeIn 1.2s ease-out}
+.hero-crest::before{content:'';position:absolute;inset:-8px;border:1px solid rgba(212,175,55,.15);border-radius:50%}
+.hero-crest-inner{font-weight:700;line-height:1}
+.hero-badge{font-family:'Cinzel',serif;font-size:.55rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#D4AF37;margin-bottom:20px;opacity:0;animation:fadeInUp .8s ease-out .2s forwards}
+.hero h1{font-family:'Cinzel',serif;font-size:clamp(2rem,5.5vw,4rem);font-weight:700;line-height:1.15;margin-bottom:20px;letter-spacing:.03em;opacity:0;animation:fadeInUp .8s ease-out .3s forwards}
+.hero h1 span{color:#D4AF37}
+.hero-divider{width:80px;height:1px;background:linear-gradient(90deg,transparent,#D4AF37,transparent);margin:0 auto 24px;opacity:0;animation:fadeInUp .8s ease-out .4s forwards}
+.hero p{font-family:'Cormorant Garamond',serif;font-size:clamp(1rem,1.5vw,1.2rem);color:#C9C9C9;max-width:600px;margin:0 auto 36px;line-height:1.8;font-weight:400;opacity:0;animation:fadeInUp .8s ease-out .5s forwards}
+.hero-tags{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:36px;opacity:0;animation:fadeInUp .8s ease-out .6s forwards}
+.hero-tags span{font-family:'Cinzel',serif;font-size:.5rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:6px 16px;border:1px solid rgba(212,175,55,.2);color:rgba(255,255,255,.65);background:transparent}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;opacity:0;animation:fadeInUp .8s ease-out .7s forwards}
+.hero-trust{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-top:28px;opacity:0;animation:fadeInUp .8s ease-out .8s forwards}
+.hero-trust span{font-family:'Cormorant Garamond',serif;font-size:.8rem;color:#C9C9C9;letter-spacing:.04em;font-style:italic}
+.hero-trust span:first-child{color:#D4AF37;font-style:normal;font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.15em}
+.scroll-indicator{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(212,175,55,.3);font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;opacity:0;animation:fadeInUp .8s ease-out .9s forwards}
+.scroll-indicator .line{width:1px;height:32px;background:linear-gradient(180deg,#D4AF37,transparent);animation:pulse 2s infinite}
 
-/* ─── SECTION ─── */
-section{padding:80px 0;position:relative;content-visibility:auto;contain-intrinsic-size:600px}
-.container{max-width:1200px;margin:0 auto;padding:0 24px}
-.section-label{display:inline-flex;align-items:center;gap:6px;font-size:.62rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#d4af37;margin-bottom:10px}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:700;margin-bottom:12px;line-height:1.15}
-.section-title span{color:#d4af37}
-.section-sub{color:rgba(255,255,255,.55);font-size:.95rem;max-width:560px;line-height:1.7}
-.section-head{text-align:center;margin-bottom:48px}
-.section-head .section-sub{margin:0 auto}
+/* ─── BUTTONS ─── */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 36px;font-family:'Cinzel',serif;font-size:.65rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;border:none;cursor:pointer;transition:all .4s;border-radius:0}
+.btn-primary{background:transparent;color:#D4AF37;border:1px solid #D4AF37}
+.btn-primary:hover{background:#D4AF37;color:#050505;box-shadow:0 4px 24px rgba(212,175,55,.2)}
+.btn-outline{background:transparent;color:#D4AF37;border:1px solid rgba(212,175,55,.3)}
+.btn-outline:hover{background:#D4AF37;color:#050505}
+.btn-whatsapp{background:transparent;color:#25D366;border:1px solid rgba(37,211,102,.3)}
+.btn-whatsapp:hover{background:#25D366;color:#050505}
 
 /* ─── FEATURED CARDS ─── */
 .featured-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.featured-card{position:relative;border-radius:4px;overflow:hidden;cursor:pointer;transition:all .5s;background:linear-gradient(135deg,#14100a,#1a1410);border:1px solid rgba(255,255,255,.06)}
-.featured-card:hover{transform:scale(1.03);border-color:rgba(139,26,26,.4)}
-.featured-card-img{height:220px;overflow:hidden;background:#14100a}
-.featured-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-.featured-card:hover .featured-card-img img{transform:scale(1.08)}
-.featured-card-body{padding:20px}
-.featured-card-body h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;margin-bottom:6px}
-.featured-card-body p{color:rgba(255,255,255,.55);font-size:.82rem;line-height:1.5;margin-bottom:10px}
-.featured-card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:10px;border-top:1px solid rgba(255,255,255,.06)}
-.featured-price{font-weight:700;font-size:1rem;color:#d4af37}
+.featured-card{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;transition:all .5s;background:#0D0D0D;border:1px solid rgba(212,175,55,.15)}
+.featured-card::before{content:'';position:absolute;inset:0;border-radius:12px;opacity:0;transition:opacity .5s;box-shadow:inset 0 0 60px rgba(212,175,55,.04)}
+.featured-card:hover{transform:translateY(-6px);border-color:rgba(212,175,55,.35)}
+.featured-card:hover::before{opacity:1}
+.featured-card-img{height:240px;overflow:hidden;background:#0D0D0D}
+.featured-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.featured-card:hover .featured-card-img img{transform:scale(1.06)}
+.featured-card-body{padding:24px}
+.featured-card-body h3{font-family:'Cinzel',serif;font-size:1.1rem;font-weight:600;margin-bottom:8px;letter-spacing:.04em}
+.featured-card-body p{font-family:'Inter',sans-serif;color:#C9C9C9;font-size:.78rem;line-height:1.6;margin-bottom:12px;font-weight:300}
+.featured-card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid rgba(212,175,55,.1)}
+.featured-price{font-family:'Cinzel',serif;font-weight:600;font-size:.9rem;color:#D4AF37;letter-spacing:.03em}
+.featured-stars{font-size:.65rem;color:rgba(212,175,55,.4);letter-spacing:3px}
 
 /* ─── EXPERIENCE CARDS ─── */
-.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center}
-.exp-card{transition:all .4s;cursor:default}
-.exp-card:hover{transform:scale(1.05)}
-.exp-icon{color:#d4af37;margin-bottom:20px;display:flex;justify-content:center}
-.exp-card h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;margin-bottom:8px}
-.exp-card p{color:rgba(255,255,255,.55);font-size:.85rem;line-height:1.6}
+.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;text-align:center}
+.exp-card{transition:all .5s;cursor:default;padding:32px 24px;border:1px solid transparent}
+.exp-card:hover{transform:translateY(-4px);border-color:rgba(212,175,55,.12);background:rgba(212,175,55,.02)}
+.exp-icon{color:#D4AF37;margin-bottom:24px;display:flex;justify-content:center;opacity:.8}
+.exp-card h3{font-family:'Cinzel',serif;font-size:1.1rem;font-weight:600;margin-bottom:10px;letter-spacing:.04em}
+.exp-card p{font-family:'Inter',sans-serif;color:#C9C9C9;font-size:.82rem;line-height:1.7;font-weight:300}
 
 /* ─── CTA BANNER ─── */
-.cta-section{position:relative;overflow:hidden;background:linear-gradient(135deg,#14100a,#0a0a0a)}
-.cta-pattern{position:absolute;inset:0;opacity:.06;background-image:repeating-linear-gradient(45deg,#8b1a1a 0,#8b1a1a 1px,transparent 1px,transparent 24px)}
+.cta-section{position:relative;overflow:hidden;background:#0D0D0D}
+.cta-pattern{position:absolute;inset:0;opacity:.04;background-image:repeating-linear-gradient(45deg,#D4AF37 0,#D4AF37 1px,transparent 1px,transparent 32px)}
+.cta-glow{position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.05),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
 .cta-content{position:relative;z-index:2;text-align:center;max-width:700px;margin:0 auto}
-.cta-content h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;margin-bottom:14px}
-.cta-content p{color:rgba(255,255,255,.6);font-size:1rem;margin-bottom:32px;line-height:1.7}
+.cta-content h2{font-family:'Cinzel',serif;font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:700;margin-bottom:16px;letter-spacing:.03em}
+.cta-content p{font-family:'Cormorant Garamond',serif;color:#C9C9C9;font-size:1rem;margin-bottom:36px;line-height:1.8;font-style:italic}
 
 /* ─── MENU PAGE ─── */
-.menu-header{padding:120px 0 60px;text-align:center;background:linear-gradient(180deg,#0a0a0a,#14100a)}
-.menu-category{margin-bottom:60px}
-.menu-category-head{display:flex;align-items:center;gap:14px;margin-bottom:28px}
-.menu-category-head h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600}
-.menu-category-head .line{flex:1;height:1px;background:linear-gradient(90deg,#d4af37,transparent)}
+.menu-header{padding:140px 0 60px;text-align:center;background:linear-gradient(180deg,#050505,#0D0D0D)}
+.menu-category{margin-bottom:64px}
+.menu-category-head{display:flex;align-items:center;gap:16px;margin-bottom:32px}
+.menu-category-head h2{font-family:'Cinzel',serif;font-size:1.5rem;font-weight:600;letter-spacing:.04em;white-space:nowrap}
+.menu-category-head .line{flex:1;height:1px;background:linear-gradient(90deg,#D4AF37,transparent)}
 .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.menu-card{display:flex;gap:14px;padding:12px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:4px;transition:all .3s;cursor:pointer}
-.menu-card:hover{background:rgba(139,26,26,.08);border-color:rgba(139,26,26,.3);transform:translateY(-3px)}
-.menu-card-img{width:80px;height:80px;border-radius:4px;overflow:hidden;flex-shrink:0;background:#14100a}
-.menu-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.menu-card{display:flex;gap:16px;padding:16px;background:#0D0D0D;border:1px solid rgba(212,175,55,.1);border-radius:10px;transition:all .4s;cursor:pointer}
+.menu-card:hover{background:rgba(212,175,55,.03);border-color:rgba(212,175,55,.25);transform:translateY(-3px)}
+.menu-card-img{width:80px;height:80px;border-radius:8px;overflow:hidden;flex-shrink:0;background:#050505}
+.menu-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
 .menu-card:hover .menu-card-img img{transform:scale(1.08)}
 .menu-card-info{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center}
-.menu-card-name{font-family:'Cormorant Garamond',serif;font-size:.95rem;font-weight:600;margin-bottom:2px}
-.menu-card-desc{color:rgba(255,255,255,.45);font-size:.72rem;line-height:1.4;margin-bottom:4px}
-.menu-card-price{font-weight:700;color:#d4af37;font-size:.85rem}
-.menu-card-price small{font-weight:400;color:rgba(255,255,255,.35);font-size:.65rem}
-.menu-badge{display:inline-block;font-size:.52rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;background:rgba(139,26,26,.2);color:#d4af37;border-radius:2px;margin-top:2px}
+.menu-card-name{font-family:'Cinzel',serif;font-size:.82rem;font-weight:600;margin-bottom:4px;letter-spacing:.03em}
+.menu-card-desc{font-family:'Inter',sans-serif;color:#C9C9C9;font-size:.68rem;line-height:1.5;margin-bottom:4px;font-weight:300}
+.menu-card-price{font-family:'Cinzel',serif;font-weight:600;color:#D4AF37;font-size:.78rem;letter-spacing:.02em}
+.menu-card-price small{font-family:'Inter',sans-serif;font-weight:300;color:rgba(255,255,255,.3);font-size:.6rem}
+.menu-badge{display:inline-block;font-family:'Cinzel',serif;font-size:.45rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;background:rgba(212,175,55,.12);color:#D4AF37;margin-top:2px}
+
+/* ─── TOOLBAR ─── */
+.toolbar{display:flex;gap:16px;margin-bottom:40px;flex-wrap:wrap;padding-top:40px}
+.toolbar input{flex:1;min-width:220px;padding:12px 20px;border-radius:0;border:1px solid rgba(212,175,55,.15);background:rgba(255,255,255,.02);color:#fff;font-family:'Inter',sans-serif;font-size:16px;outline:none;transition:border-color .4s}
+.toolbar input:focus{border-color:#D4AF37}
+.toolbar input::placeholder{color:rgba(255,255,255,.25);font-weight:300}
+#menuCats{display:flex;gap:6px;flex-wrap:wrap}
+#menuCats .btn{padding:10px 22px;font-size:.58rem;border-radius:0}
 
 /* ─── PRODUCT MODAL ─── */
-.pmodal-overlay{position:fixed;inset:0;z-index:65;background:rgba(0,0,0,.7);opacity:0;pointer-events:none;transition:opacity .35s;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.pmodal-overlay{position:fixed;inset:0;z-index:65;background:rgba(0,0,0,.8);opacity:0;pointer-events:none;transition:opacity .4s;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 .pmodal-overlay.open{opacity:1;pointer-events:auto}
-.pmodal{position:fixed;top:50%;left:50%;z-index:66;transform:translate(-50%,-50%) scale(.92);transition:all .35s;max-width:460px;width:calc(100% - 32px);max-height:90vh;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;background:#14100a;border:1px solid rgba(255,255,255,.08);border-radius:6px;opacity:0;pointer-events:none}
+.pmodal{position:fixed;top:50%;left:50%;z-index:66;transform:translate(-50%,-50%) scale(.92);transition:all .4s;max-width:480px;width:calc(100% - 32px);max-height:90vh;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;background:#0D0D0D;border:1px solid rgba(212,175,55,.2);border-radius:12px;opacity:0;pointer-events:none}
 .pmodal.open{transform:translate(-50%,-50%) scale(1);opacity:1;pointer-events:auto}
-.pmodal-close{position:absolute;top:10px;right:10px;z-index:2;width:32px;height:32px;border-radius:50%;border:none;background:rgba(0,0,0,.5);color:#fff;cursor:pointer;font-size:1.1rem;display:grid;place-items:center;transition:background .2s}
-.pmodal-close:hover{background:rgba(0,0,0,.7)}
-.pmodal-img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#14100a}
-.pmodal-body{padding:20px}
-.pmodal-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;margin-bottom:4px}
-.pmodal-desc{color:rgba(255,255,255,.55);font-size:.82rem;margin-bottom:14px;line-height:1.5}
+.pmodal-close{position:absolute;top:12px;right:12px;z-index:2;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.5);color:#fff;cursor:pointer;font-size:1.1rem;display:grid;place-items:center;transition:all .3s}
+.pmodal-close:hover{background:rgba(212,175,55,.15);border-color:#D4AF37;color:#D4AF37}
+.pmodal-img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#050505}
+.pmodal-body{padding:24px}
+.pmodal-name{font-size:1.2rem;font-weight:700;margin-bottom:6px;letter-spacing:.03em}
+.pmodal-desc{font-family:'Inter',sans-serif;color:#C9C9C9;font-size:.78rem;margin-bottom:16px;line-height:1.6;font-weight:300}
 .pmodal-variants{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
-.pmodal-variant{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:4px;cursor:pointer;transition:all .25s}
-.pmodal-variant:hover,.pmodal-variant.selected{background:rgba(139,26,26,.12);border-color:#8b1a1a}
-.pmodal-variant .label{font-size:.85rem;font-weight:500}
-.pmodal-variant .price{font-weight:700;color:#d4af37;font-size:.95rem}
-.pmodal-add{width:100%;padding:13px;border:none;border-radius:4px;background:#25D366;color:#fff;font-weight:700;font-size:.88rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;font-family:'Montserrat',sans-serif}
-.pmodal-add:hover{background:#1ebe57}
-.pmodal-call{text-align:center;margin-top:10px}
-.pmodal-call a{color:#d4af37;font-size:.82rem;text-decoration:underline}
+.pmodal-variant{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.12);border-radius:8px;cursor:pointer;transition:all .3s}
+.pmodal-variant:hover,.pmodal-variant.selected{background:rgba(212,175,55,.08);border-color:#D4AF37}
+.pmodal-variant .label{font-family:'Inter',sans-serif;font-size:.82rem;font-weight:500}
+.pmodal-variant .price{font-family:'Cinzel',serif;font-weight:700;color:#D4AF37;font-size:.9rem}
+.pmodal-qty{display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:20px}
+.pmodal-qty button{width:40px;height:40px;border-radius:50%;border:1px solid rgba(212,175,55,.2);background:transparent;color:#fff;cursor:pointer;font-size:1.1rem;display:grid;place-items:center;transition:all .3s;font-family:'Inter',sans-serif}
+.pmodal-qty button:hover{background:rgba(212,175,55,.1);border-color:#D4AF37;color:#D4AF37}
+.pmodal-qty span{min-width:32px;text-align:center;font-size:1.2rem;font-weight:700;color:#D4AF37;font-family:'Cinzel',serif}
+.pmodal-add{width:100%;padding:14px;border:1px solid #D4AF37;border-radius:0;background:transparent;color:#D4AF37;font-weight:600;font-size:.82rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .4s;font-family:'Cinzel',serif;letter-spacing:.12em;text-transform:uppercase}
+.pmodal-add:hover{background:#D4AF37;color:#050505}
+.pmodal-call{text-align:center;margin-top:12px}
+.pmodal-call a{color:#D4AF37;font-size:.78rem;font-family:'Cormorant Garamond',serif;font-style:italic}
 
 /* ─── ABOUT ─── */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.about-visual{background:linear-gradient(135deg,rgba(139,26,26,.12),transparent);border-radius:4px;height:380px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.06)}
-.about-visual img{width:100%;height:100%;object-fit:contain;padding:30px}
-.about-text h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;margin-bottom:14px}
-.about-text p{color:rgba(255,255,255,.6);font-size:.92rem;line-height:1.8;margin-bottom:14px}
-.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
-.about-stat{text-align:center;padding:16px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:4px;transition:all .3s}
-.about-stat:hover{background:rgba(139,26,26,.08);border-color:rgba(139,26,26,.3)}
-.about-stat .num{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:#d4af37}
-.about-stat .label{font-size:.68rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.1em;margin-top:3px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-visual{background:linear-gradient(135deg,rgba(212,175,55,.06),transparent);border-radius:16px;height:400px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(212,175,55,.15)}
+.about-visual img{width:100%;height:100%;object-fit:contain;padding:40px}
+.about-text h2{font-family:'Cinzel',serif;font-size:1.6rem;font-weight:700;margin-bottom:16px;letter-spacing:.03em}
+.about-text p{font-family:'Inter',sans-serif;color:#C9C9C9;font-size:.85rem;line-height:1.8;margin-bottom:16px;font-weight:300}
+.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.about-stat{text-align:center;padding:20px;background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.1);border-radius:10px;transition:all .4s}
+.about-stat:hover{background:rgba(212,175,55,.05);border-color:rgba(212,175,55,.25);transform:translateY(-2px)}
+.about-stat .num{font-family:'Cinzel',serif;font-size:1.5rem;font-weight:700;color:#D4AF37}
+.about-stat .label{font-family:'Inter',sans-serif;font-size:.65rem;color:#C9C9C9;text-transform:uppercase;letter-spacing:.12em;margin-top:4px;font-weight:300}
 
 /* ─── GALLERY ─── */
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.gallery-item{position:relative;border-radius:4px;overflow:hidden;cursor:pointer;aspect-ratio:1/1;border:1px solid rgba(255,255,255,.06);transition:all .4s}
-.gallery-item:hover{transform:scale(1.03);border-color:rgba(139,26,26,.4)}
-.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery-item{position:relative;border-radius:10px;overflow:hidden;cursor:pointer;aspect-ratio:1/1;border:1px solid rgba(212,175,55,.1);transition:all .5s}
+.gallery-item:hover{transform:scale(1.02);border-color:rgba(212,175,55,.3)}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
 .gallery-item:hover img{transform:scale(1.08)}
 .gallery-item:first-child{grid-column:span 2;grid-row:span 2}
-.gallery-item .label{position:absolute;bottom:0;left:0;right:0;padding:12px;background:linear-gradient(transparent,rgba(0,0,0,.7));font-size:.72rem;color:rgba(255,255,255,.8);opacity:0;transition:opacity .3s}
+.gallery-item .label{position:absolute;bottom:0;left:0;right:0;padding:14px;background:linear-gradient(transparent,rgba(5,5,5,.85));font-family:'Cinzel',serif;font-size:.65rem;color:rgba(255,255,255,.75);letter-spacing:.06em;opacity:0;transition:opacity .4s}
 .gallery-item:hover .label{opacity:1}
 
 /* ─── REVIEWS ─── */
-.reviews-header{text-align:center;margin-bottom:48px}
-.reviews-header .stars{display:flex;justify-content:center;gap:4px;margin-bottom:8px;color:#d4af37;font-size:1.3rem}
-.reviews-header .avg{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:#d4af37;margin-bottom:4px}
-.reviews-header .count{color:rgba(255,255,255,.5);font-size:.82rem}
+.reviews-header{text-align:center;margin-bottom:60px}
+.reviews-header .stars{display:flex;justify-content:center;gap:4px;margin-bottom:10px;color:#D4AF37;font-size:1.1rem;letter-spacing:4px}
+.reviews-header .avg{font-family:'Cinzel',serif;font-size:2.2rem;font-weight:700;color:#D4AF37;margin-bottom:4px}
+.reviews-header .count{font-family:'Cormorant Garamond',serif;color:#C9C9C9;font-size:.85rem;font-style:italic}
 .reviews-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.review-card{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:4px;padding:24px;transition:all .3s}
-.review-card:hover{background:rgba(139,26,26,.06);border-color:rgba(139,26,26,.25);transform:translateY(-3px)}
-.review-stars{color:#f59e0b;font-size:.85rem;margin-bottom:8px;letter-spacing:2px}
-.review-text{color:rgba(255,255,255,.6);font-size:.85rem;line-height:1.6;margin-bottom:12px;font-style:italic}
-.review-author{font-weight:600;font-size:.82rem}
-.review-role{font-size:.7rem;color:rgba(255,255,255,.4)}
+.review-card{background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.1);border-radius:10px;padding:28px;transition:all .4s}
+.review-card:hover{background:rgba(212,175,55,.04);border-color:rgba(212,175,55,.2);transform:translateY(-3px)}
+.review-stars{color:#D4AF37;font-size:.8rem;margin-bottom:10px;letter-spacing:3px}
+.review-text{font-family:'Cormorant Garamond',serif;color:#C9C9C9;font-size:.88rem;line-height:1.7;margin-bottom:14px;font-style:italic}
+.review-author{font-family:'Cinzel',serif;font-weight:600;font-size:.78rem;letter-spacing:.04em}
+.review-role{font-family:'Inter',sans-serif;font-size:.65rem;color:rgba(255,255,255,.35);font-weight:300;margin-top:2px}
 
 /* ─── CONTACT ─── */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
-.contact-info h2{font-family:'Cormorant Garamond',serif;font-size:1.5rem;margin-bottom:24px}
-.contact-item{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
-.contact-icon{width:44px;height:44px;border-radius:4px;background:rgba(139,26,26,.12);display:grid;place-items:center;flex-shrink:0;color:#d4af37}
-.contact-item .label{font-size:.68rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px}
-.contact-item .val{font-weight:500;font-size:.88rem}
-.contact-item .val a{color:inherit}
-.contact-item .val a:hover{color:#d4af37}
-.hours-box{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:4px;padding:20px}
-.hours-box h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;margin-bottom:16px}
-.hours-row{display:flex;justify-content:space-between;padding:5px 0;font-size:.82rem}
-.hours-row .day{color:rgba(255,255,255,.5)}
-.hours-row .time{font-weight:500}
-.hours-row.highlight .day,.hours-row.highlight .time{color:#d4af37}
-.contact-form input,.contact-form select,.contact-form textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:14px 16px;color:#fff;font-family:'Montserrat',sans-serif;font-size:16px;transition:all .3s;outline:none;box-sizing:border-box}
-.contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,.3)}
-.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:#8b1a1a;background:rgba(139,26,26,.06)}
-.contact-form select option{background:#0a0a0a;color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.contact-info h2{font-family:'Cinzel',serif;font-size:1.3rem;margin-bottom:28px;letter-spacing:.03em}
+.contact-item{display:flex;gap:16px;margin-bottom:24px;align-items:flex-start}
+.contact-icon{width:44px;height:44px;border-radius:10px;border:1px solid rgba(212,175,55,.15);background:rgba(212,175,55,.04);display:grid;place-items:center;flex-shrink:0;color:#D4AF37;font-size:1rem}
+.contact-item .label{font-family:'Inter',sans-serif;font-size:.6rem;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.12em;margin-bottom:3px;font-weight:300}
+.contact-item .val{font-weight:500;font-size:.85rem}
+.contact-item .val a{color:inherit;transition:color .3s}
+.contact-item .val a:hover{color:#D4AF37}
+.hours-box{background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.1);border-radius:10px;padding:24px}
+.hours-box h3{font-family:'Cinzel',serif;font-size:1rem;margin-bottom:18px;letter-spacing:.04em}
+.hours-row{display:flex;justify-content:space-between;padding:6px 0;font-family:'Inter',sans-serif;font-size:.78rem;font-weight:300}
+.hours-row .day{color:#C9C9C9}
+.hours-row .time{font-weight:500;color:rgba(255,255,255,.7)}
+.hours-row.highlight .day,.hours-row.highlight .time{color:#D4AF37;font-weight:600}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.12);border-radius:0;padding:14px 18px;color:#fff;font-family:'Inter',sans-serif;font-size:16px;transition:all .4s;outline:none;box-sizing:border-box}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,.25);font-weight:300}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:#D4AF37;background:rgba(212,175,55,.03)}
+.contact-form select option{background:#050505;color:#fff}
 .contact-form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 
 /* ─── FOOTER ─── */
-footer{background:#0a0a0a;border-top:1px solid rgba(255,255,255,.06);padding:60px 0 40px}
-.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-bottom:40px}
-footer .logo{font-size:1.4rem}
-footer .desc{color:rgba(255,255,255,.5);font-size:.8rem;line-height:1.6;margin-top:10px;max-width:280px}
-footer h4{font-family:'Cormorant Garamond',serif;font-size:1.05rem;margin-bottom:14px}
-footer .links{display:flex;flex-direction:column;gap:8px}
-footer .links button{background:none;border:none;color:rgba(255,255,255,.5);font-size:.8rem;cursor:pointer;text-align:left;padding:0;font-family:'Montserrat',sans-serif;transition:color .3s}
-footer .links button:hover{color:#d4af37}
-footer .hours p{color:rgba(255,255,255,.5);font-size:.8rem;margin-bottom:4px}
-footer .hours .gold{color:#d4af37}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.footer-bottom p{color:rgba(255,255,255,.35);font-size:.74rem}
-.footer-bottom .legal{display:flex;gap:20px}
-.footer-bottom .legal button{background:none;border:none;color:rgba(255,255,255,.35);font-size:.74rem;cursor:pointer;font-family:'Montserrat',sans-serif;transition:color .3s}
-.footer-bottom .legal button:hover{color:#d4af37}
+footer{background:#050505;border-top:1px solid rgba(212,175,55,.08);padding:80px 0 40px}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:48px;margin-bottom:48px}
+footer .logo{font-size:1.2rem}
+footer .desc{font-family:'Inter',sans-serif;color:rgba(255,255,255,.4);font-size:.78rem;line-height:1.7;margin-top:12px;max-width:280px;font-weight:300}
+footer h4{font-family:'Cinzel',serif;font-size:.9rem;margin-bottom:18px;letter-spacing:.08em;color:rgba(255,255,255,.6)}
+footer .links{display:flex;flex-direction:column;gap:10px}
+footer .links button{background:none;border:none;font-family:'Inter',sans-serif;color:rgba(255,255,255,.4);font-size:.78rem;cursor:pointer;text-align:left;padding:0;transition:color .4s;font-weight:300}
+footer .links button:hover{color:#D4AF37}
+footer .hours p{font-family:'Inter',sans-serif;color:rgba(255,255,255,.4);font-size:.78rem;margin-bottom:4px;font-weight:300}
+footer .hours .gold{color:#D4AF37;font-weight:500}
+.footer-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,.2),transparent);margin-bottom:24px}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-bottom p{font-family:'Inter',sans-serif;color:rgba(255,255,255,.3);font-size:.7rem;font-weight:300}
+.footer-bottom .legal{display:flex;gap:24px}
+.footer-bottom .legal button{background:none;border:none;font-family:'Inter',sans-serif;color:rgba(255,255,255,.3);font-size:.7rem;cursor:pointer;transition:color .4s;font-weight:300}
+.footer-bottom .legal button:hover{color:#D4AF37}
 
 /* ─── CART ─── */
-.cart-fab{position:fixed;bottom:24px;right:24px;z-index:40;width:56px;height:56px;border-radius:50%;border:none;background:#8b1a1a;color:#fff;cursor:pointer;font-size:1.2rem;display:grid;place-items:center;box-shadow:0 4px 20px rgba(139,26,26,.4);transition:all .3s;will-change:transform}
-.cart-fab:hover{transform:scale(1.06)}
-.cart-fab .count{position:absolute;top:-4px;right:-4px;width:22px;height:22px;border-radius:50%;background:#22c55e;color:#fff;font-size:.6rem;font-weight:700;display:grid;place-items:center;border:2px solid #0a0a0a}
-.cart-panel{position:fixed;bottom:0;right:0;z-index:60;width:100%;max-width:400px;height:80vh;background:#14100a;border:1px solid rgba(255,255,255,.08);border-radius:8px 8px 0 0;transform:translateY(110%);transition:transform .4s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column}
+.cart-fab{position:fixed;bottom:24px;right:24px;z-index:40;width:56px;height:56px;border-radius:50%;border:1px solid #D4AF37;background:rgba(5,5,5,.9);color:#D4AF37;cursor:pointer;font-size:1.1rem;display:grid;place-items:center;box-shadow:0 4px 24px rgba(212,175,55,.15);transition:all .4s;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);will-change:transform}
+.cart-fab:hover{background:#D4AF37;color:#050505;transform:scale(1.06)}
+.cart-fab .count{position:absolute;top:-4px;right:-4px;width:22px;height:22px;border-radius:50%;background:#D4AF37;color:#050505;font-size:.55rem;font-weight:700;display:grid;place-items:center;border:2px solid #050505;font-family:'Cinzel',serif}
+.cart-panel{position:fixed;bottom:0;right:0;z-index:60;width:100%;max-width:420px;height:80vh;background:#0D0D0D;border:1px solid rgba(212,175,55,.15);border-radius:16px 16px 0 0;transform:translateY(110%);transition:transform .5s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column}
 .cart-panel.open{transform:translateY(0)}
-.cart-header{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.06);flex-shrink:0}
-.cart-header h3{font-family:'Cormorant Garamond',serif;font-size:1rem}
-.cart-close{background:none;border:none;color:rgba(255,255,255,.5);cursor:pointer;font-size:1.3rem;padding:8px}
-.cart-items{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:8px 20px}
-.cart-item{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05)}
-.cart-item-name{font-size:.82rem;font-weight:500}
-.cart-item-price{font-size:.72rem;color:#d4af37}
-.cart-item-qty{display:flex;align-items:center;gap:8px}
-.cart-item-qty button{width:30px;height:30px;border-radius:50%;border:1px solid rgba(255,255,255,.1);background:transparent;color:#fff;cursor:pointer;font-size:.85rem;display:grid;place-items:center;transition:all .2s}
-.cart-item-qty button:hover{background:rgba(255,255,255,.08)}
-.cart-item-qty span{min-width:20px;text-align:center;font-size:.85rem;font-weight:600}
-.cart-empty{text-align:center;padding:50px 20px;color:rgba(255,255,255,.4)}
-.cart-footer{padding:16px 20px;border-top:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;gap:10px}
-.cart-total{display:flex;justify-content:space-between;font-weight:700;font-size:.95rem}
-.cart-checkout{width:100%;padding:12px;border:none;border-radius:4px;background:#25D366;color:#fff;font-weight:700;font-size:.85rem;cursor:pointer;transition:all .2s;font-family:'Montserrat',sans-serif}
-.cart-checkout:hover{background:#1ebe57}
-.cart-clear{background:none;border:none;color:rgba(255,255,255,.35);font-size:.7rem;cursor:pointer;text-decoration:underline;font-family:'Montserrat',sans-serif}
-.cart-clear:hover{color:#ef4444}
-.overlay{position:fixed;inset:0;z-index:55;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .35s}
-.overlay.show{opacity:1;pointer-events:auto}
-.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);z-index:70;background:#14100a;border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:10px 20px;font-size:.82rem;font-weight:500;box-shadow:0 8px 24px rgba(0,0,0,.4);opacity:0;transition:all .35s;pointer-events:none;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.cart-header{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;border-bottom:1px solid rgba(212,175,55,.08);flex-shrink:0}
+.cart-header h3{font-family:'Cinzel',serif;font-size:.95rem;letter-spacing:.05em}
+.cart-close{background:none;border:none;color:rgba(255,255,255,.4);cursor:pointer;font-size:1.2rem;padding:8px;transition:color .3s}
+.cart-close:hover{color:#D4AF37}
+.cart-items{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:8px 24px}
+.cart-items::-webkit-scrollbar{width:4px}
+.cart-items::-webkit-scrollbar-thumb{background:rgba(212,175,55,.2);border-radius:2px}
+.cart-item{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(212,175,55,.05)}
+.cart-item-info .cart-item-name{font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500}
+.cart-item-info .cart-item-price{font-family:'Cinzel',serif;font-size:.7rem;color:#D4AF37;margin-top:2px;letter-spacing:.02em}
+.cart-item-qty{display:flex;align-items:center;gap:10px}
+.cart-item-qty button{width:32px;height:32px;border-radius:50%;border:1px solid rgba(212,175,55,.15);background:transparent;color:#fff;cursor:pointer;font-size:.8rem;display:grid;place-items:center;transition:all .3s;font-family:'Inter',sans-serif}
+.cart-item-qty button:hover{background:rgba(212,175,55,.1);border-color:#D4AF37;color:#D4AF37}
+.cart-item-qty span{min-width:20px;text-align:center;font-size:.85rem;font-weight:600;font-family:'Cinzel',serif;color:#D4AF37}
+.cart-empty{text-align:center;padding:60px 24px;color:rgba(255,255,255,.3)}
+.cart-empty p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.9rem}
+.cart-footer{padding:20px 24px;border-top:1px solid rgba(212,175,55,.08);display:flex;flex-direction:column;gap:10px}
+.cart-total{display:flex;justify-content:space-between;font-family:'Cinzel',serif;font-weight:700;font-size:.95rem;letter-spacing:.03em;padding-bottom:4px}
+.cart-checkout{width:100%;padding:12px;border:1px solid rgba(212,175,55,.15);border-radius:0;background:transparent;color:rgba(255,255,255,.5);font-family:'Cinzel',serif;font-weight:500;font-size:.7rem;cursor:pointer;transition:all .3s;letter-spacing:.12em;text-transform:uppercase;text-align:center}
+.cart-checkout:hover{background:rgba(212,175,55,.05);color:#D4AF37;border-color:rgba(212,175,55,.3)}
+.cart-overlay{position:fixed;inset:0;z-index:55;background:rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:opacity .4s}
+.cart-overlay.show{opacity:1;pointer-events:auto}
+
+/* ─── TOAST ─── */
+.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);z-index:70;background:#0D0D0D;border:1px solid rgba(212,175,55,.2);border-radius:8px;padding:12px 24px;font-family:'Inter',sans-serif;font-size:.78rem;font-weight:400;box-shadow:0 8px 32px rgba(0,0,0,.5);opacity:0;transition:all .4s;pointer-events:none;display:flex;align-items:center;gap:10px;white-space:nowrap;color:#C9C9C9}
 .toast.show{opacity:1}
 
-/* ─── PROGRESS BAR ─── */
-.progress-bar{position:fixed;top:0;left:0;z-index:100;width:0;height:2px;background:linear-gradient(90deg,#8b1a1a,#d4af37);transition:width .1s linear}
-/* ─── BACK TO TOP ─── */
-.btt{position:fixed;bottom:90px;right:24px;z-index:39;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.1);background:rgba(10,10,10,.8);color:rgba(255,255,255,.6);cursor:pointer;font-size:1.1rem;display:grid;place-items:center;opacity:0;pointer-events:none;transition:all .4s;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
-.btt.show{opacity:1;pointer-events:auto}
-.btt:hover{color:#d4af37;border-color:#d4af37;transform:translateY(-3px)}
-/* ─── PAGE TRANSITION ─── */
-.page-transition{position:fixed;inset:0;z-index:200;background:#0a0a0a;opacity:0;pointer-events:none;transition:opacity .3s}
-.page-transition.active{opacity:1;pointer-events:auto}
-/* ─── QUANTITY IN MODAL ─── */
-.pmodal-qty{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:16px}
-.pmodal-qty button{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.12);background:transparent;color:#fff;cursor:pointer;font-size:1.2rem;display:grid;place-items:center;transition:all .2s;font-family:'Montserrat',sans-serif}
-.pmodal-qty button:hover{background:rgba(139,26,26,.15);border-color:#8b1a1a}
-.pmodal-qty span{min-width:32px;text-align:center;font-size:1.3rem;font-weight:700;color:#d4af37}
 /* ─── LIGHTBOX ─── */
-.lightbox{position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.92);opacity:0;pointer-events:none;transition:opacity .35s;display:flex;align-items:center;justify-content:center}
+.lightbox{position:fixed;inset:0;z-index:80;background:rgba(5,5,5,.95);opacity:0;pointer-events:none;transition:opacity .4s;display:flex;align-items:center;justify-content:center}
 .lightbox.open{opacity:1;pointer-events:auto}
-.lightbox img{max-width:92vw;max-height:88vh;object-fit:contain;border-radius:4px;transform:scale(.9);transition:transform .35s}
+.lightbox img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:8px;transform:scale(.92);transition:transform .4s;border:1px solid rgba(212,175,55,.1)}
 .lightbox.open img{transform:scale(1)}
-.lightbox-close{position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:50%;border:none;background:rgba(255,255,255,.1);color:#fff;cursor:pointer;font-size:1.3rem;display:grid;place-items:center;transition:background .2s}
-.lightbox-close:hover{background:rgba(255,255,255,.2)}
-/* ─── CART ANIMATION ─── */
-.cart-fly{position:fixed;z-index:90;width:48px;height:48px;border-radius:50%;object-fit:cover;pointer-events:none;transition:all .6s cubic-bezier(.22,1,.36,1);opacity:0}
+.lightbox-close{position:absolute;top:20px;right:20px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.5);color:#fff;cursor:pointer;font-size:1.2rem;display:grid;place-items:center;transition:all .3s}
+.lightbox-close:hover{background:rgba(212,175,55,.15);border-color:#D4AF37;color:#D4AF37}
+
+/* ─── BACK TO TOP ─── */
+.btt{position:fixed;bottom:90px;right:24px;z-index:39;width:44px;height:44px;border-radius:50%;border:1px solid rgba(212,175,55,.15);background:rgba(5,5,5,.8);color:rgba(212,175,55,.5);cursor:pointer;font-size:1rem;display:grid;place-items:center;opacity:0;pointer-events:none;transition:all .5s;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.btt.show{opacity:1;pointer-events:auto}
+.btt:hover{color:#D4AF37;border-color:#D4AF37;transform:translateY(-3px)}
+
+/* ─── CART FLY ─── */
+.cart-fly{position:fixed;z-index:90;width:48px;height:48px;border-radius:12px;object-fit:cover;pointer-events:none;transition:all .6s cubic-bezier(.22,1,.36,1);opacity:0;border:1px solid rgba(212,175,55,.2)}
 .cart-fly.active{opacity:1}
+
 /* ─── COUNTER ─── */
 .counter{display:inline-block}
+
 /* ─── SEARCH INFO ─── */
-.search-info{font-size:.72rem;color:rgba(255,255,255,.35);margin-top:8px;text-align:center}
+.search-info{font-family:'Inter',sans-serif;font-size:.68rem;color:rgba(255,255,255,.3);margin-top:8px;text-align:center;font-weight:300}
 
 /* ─── RESPONSIVE ─── */
 @media(max-width:1024px){
@@ -330,27 +362,29 @@ footer .hours .gold{color:#d4af37}
   .featured-grid,.exp-grid{grid-template-columns:1fr}
   .menu-grid{grid-template-columns:1fr}
   .menu-card{padding:14px}
-  .menu-card-img{width:72px;height:72px;flex-shrink:0}
-  .menu-card-name{font-size:.95rem}
-  .about-grid{grid-template-columns:1fr;gap:30px}
-  .about-visual{height:220px}
+  .menu-card-img{width:72px;height:72px}
+  .menu-card-name{font-size:.78rem}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .about-visual{height:260px}
   .gallery-grid{grid-template-columns:repeat(2,1fr)}
   .gallery-item:first-child{grid-column:span 1;grid-row:span 1}
   .reviews-grid{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
   .contact-form .row{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr;text-align:center}
-  footer .desc{margin:10px auto}
+  footer .desc{margin:10px auto;max-width:100%}
   footer .links button{text-align:center}
-  .hero h1{font-size:clamp(1.6rem,6vw,2.2rem)}
-  .hero p{font-size:.85rem}
-  .hero-badge{font-size:.58rem}
-  .hero-tags span{font-size:.58rem;padding:4px 10px}
-  .hero-trust span{font-size:.62rem}
+  footer h4{text-align:center}
+  .hero h1{font-size:clamp(1.5rem,5vw,2rem)}
+  .hero p{font-size:.9rem}
+  .hero-badge,.hero-tags span{font-size:.5rem}
+  .hero-tags span{padding:5px 12px}
+  .hero-trust{gap:16px}
+  .hero-trust span{font-size:.7rem}
   .hero-btns{flex-direction:column;align-items:center}
   .hero-btns .btn{width:100%;max-width:320px;justify-content:center}
-  section{padding:40px 0}
-  .section-title{font-size:clamp(1.5rem,5vw,2rem)}
+  section{padding:60px 0}
+  .section-title{font-size:clamp(1.3rem,4.5vw,1.8rem)}
   .cart-panel{max-width:100%;height:85vh}
   .about-stats{grid-template-columns:repeat(3,1fr)}
   #menuCats{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
@@ -359,58 +393,68 @@ footer .hours .gold{color:#d4af37}
   .toolbar{flex-direction:column}
   .toolbar input{min-width:0;width:100%;box-sizing:border-box;font-size:16px}
   .pmodal-qty button{width:44px;height:44px}
-  .review-card{padding:18px}
+  .review-card{padding:20px}
+  .exp-grid{gap:32px}
+  .exp-card{padding:24px 16px}
+  .section-head{margin-bottom:40px}
+  .menu-category-head h2{font-size:1.2rem}
 }
 @media(max-width:480px){
   .pmodal{max-width:100%;width:100%;max-height:100dvh;height:100dvh;border-radius:0;top:0;left:0;transform:translate(0,0) scale(.95)}
   .pmodal.open{transform:translate(0,0) scale(1)}
-  .pmodal-img{aspect-ratio:auto;max-height:35vh;object-fit:contain;background:#0a0a0a}
-  .pmodal-body{padding:16px;padding-bottom:32px}
-  .pmodal-variants{gap:10px}
-  .pmodal-variant{padding:14px 16px;min-height:48px}
-  .pmodal-variant .label{font-size:.92rem}
-  .pmodal-variant .price{font-size:.95rem}
-  .pmodal-add{padding:16px;font-size:.95rem;min-height:52px}
-  .pmodal-close{width:40px;height:40px;font-size:1.3rem}
-  .pmodal-qty button{width:44px;height:44px;font-size:1.3rem}
-  .pmodal-qty span{font-size:1.2rem;min-width:36px}
+  .pmodal-img{aspect-ratio:auto;max-height:35vh;object-fit:contain;background:#050505}
+  .pmodal-body{padding:20px;padding-bottom:32px}
+  .pmodal-variant{padding:12px 14px;min-height:48px}
+  .pmodal-variant .label{font-size:.8rem}
+  .pmodal-variant .price{font-size:.85rem}
+  .pmodal-add{padding:16px;font-size:.75rem;min-height:52px}
+  .pmodal-close{width:40px;height:40px;font-size:1.2rem}
+  .pmodal-qty button{width:44px;height:44px;font-size:1.2rem}
+  .pmodal-qty span{font-size:1.1rem;min-width:36px}
   .cart-panel{max-width:100%;width:100%;height:100dvh;border-radius:0;top:0;left:0;transform:translateY(100%)}
   .cart-panel.open{transform:translateY(0)}
   .cart-item{padding:14px 0;min-height:52px}
-  .cart-item-qty button{width:40px;height:40px;font-size:1.1rem}
-  .cart-checkout{padding:16px;font-size:.92rem;min-height:52px}
-  .cart-fab{width:56px;height:56px;font-size:1.3rem;bottom:16px;right:16px}
+  .cart-item-qty button{width:40px;height:40px;font-size:1rem}
+  .cart-checkout{padding:14px;font-size:.7rem;min-height:48px}
+  .cart-fab{width:54px;height:54px;font-size:1rem;bottom:16px;right:16px}
   .btt{bottom:84px;right:16px;width:40px;height:40px}
-  .featured-card-img{height:180px}
-  .btn{padding:14px 28px;font-size:.75rem}
-  .hero-content{padding:80px 16px 40px}
+  .featured-card-img{height:200px}
+  .btn{padding:14px 28px;font-size:.6rem}
+  .hero-content{padding:100px 16px 40px}
+  .hero-crest{width:56px;height:56px;font-size:1.2rem}
+  .hero-crest::before{inset:-6px}
   .hero-tags{gap:6px}
-  .hero-tags span{font-size:.55rem;padding:4px 10px}
-  .hero-trust{gap:10px}
-  .hero-trust span{font-size:.6rem}
+  .hero-trust{gap:12px}
+  .hero-trust span{font-size:.65rem}
   .exp-grid{gap:24px}
-  .contact-item .val{font-size:.82rem}
-  .footer-grid{gap:24px}
-  .hours-box{padding:16px}
-  .pmodal-name{font-size:1.15rem}
-  .pmodal-desc{font-size:.78rem}
-  .pmodal-call a{font-size:.78rem}
+  .contact-item .val{font-size:.8rem}
+  .footer-grid{gap:32px}
+  .hours-box{padding:18px}
+  .pmodal-name{font-size:1.05rem}
+  .pmodal-desc{font-size:.75rem}
+  nav.fixed .inner{padding:0 16px}
+  nav.transparent{padding:18px 0}
+  nav.solid{padding:12px 0}
+  .logo{font-size:1.1rem}
+  .logo img{width:30px;height:30px}
+  .menu-category-head h2{font-size:1rem}
+  .featured-card-body h3{font-size:.95rem}
+  .about-stat .num{font-size:1.2rem}
 }
 @media(max-width:380px){
-  .hero h1{font-size:clamp(1.3rem,5vw,1.6rem)}
-  .hero-tags span{font-size:.5rem;padding:3px 8px}
+  .hero h1{font-size:clamp(1.2rem,4.5vw,1.5rem)}
+  .hero-tags span{font-size:.45rem;padding:4px 10px}
   .hero-trust span{font-size:.55rem}
   .menu-card{padding:10px;gap:10px}
-  .menu-card-img{width:60px;height:60px}
+  .menu-card-img{width:56px;height:56px}
   .about-stats{grid-template-columns:1fr}
   .container{padding:0 12px}
-  .section-title{font-size:1.3rem}
+  .section-title{font-size:1.2rem}
 }
-/* ─── REDUCED MOTION ─── */
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
-  .hero-bg img{animation:none;opacity:.3}
-  .hero-bg img:nth-child(1){opacity:.3}
+  .hero-bg img{animation:none;opacity:.2}
+  .hero-bg img:nth-child(1){opacity:.2}
   .hero-bg img:nth-child(2),.hero-bg img:nth-child(3),.hero-bg img:nth-child(4){display:none}
   .hero-particles{display:none}
   .cart-fly{display:none}
@@ -418,6 +462,15 @@ footer .hours .gold{color:#d4af37}
 </style>
 </head>
 <body>
+
+<!-- ─── PROGRESS BAR ─── -->
+<div class="progress-bar" id="progressBar"></div>
+<button class="btt" id="btt" onclick="scrollToTop()" aria-label="Back to top">↑</button>
+<div class="page-transition" id="pageTransition"></div>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
 
 <!-- ─── NAV ─── -->
 <nav class="fixed transparent" id="navbar">
@@ -433,7 +486,7 @@ footer .hours .gold{color:#d4af37}
       <a href="tel:9840951202" class="nav-cta">Call Now</a>
     </div>
     <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </div>
 </nav>
@@ -449,6 +502,7 @@ footer .hours .gold{color:#d4af37}
 
 <!-- ─── PAGE: HOME ─── -->
 <div class="page active" id="page-home">
+
   <!-- Hero -->
   <section class="hero">
     <div class="hero-bg">
@@ -457,101 +511,108 @@ footer .hours .gold{color:#d4af37}
       <img src="images/watermelon.jpg" alt="" aria-hidden="true">
       <img src="images/tent.jpg" alt="" aria-hidden="true">
     </div>
-    <div class="hero-glow"></div>
-    <div class="hero-overlay"></div>
+    <div class="hero-spotlight"></div>
     <div class="hero-particles" aria-hidden="true">
       <span></span><span></span><span></span><span></span><span></span>
     </div>
     <div class="hero-content">
-      <div class="hero-badge"><span class="hero-badge-dot"></span> Chennai's Trusted Meat Store — Est. 2010</div>
-      <h1 style="opacity:0;animation:fadeInUp .8s ease-out .2s forwards">Farm-Fresh Meat, <span>Delivered to Your Door</span></h1>
-      <div class="hero-divider" style="opacity:0;animation:fadeInUp .8s ease-out .3s forwards"></div>
-      <p style="opacity:0;animation:fadeInUp .8s ease-out .4s forwards">Premium quality mutton, chicken, fresh juices &amp; event services in Vyasarpadi, Chennai. Order now for same-day delivery.</p>
-      <div class="hero-tags" style="opacity:0;animation:fadeInUp .8s ease-out .5s forwards">
+      <div class="hero-crest"><span class="hero-crest-inner">RP</span></div>
+      <div class="hero-badge">Est. 2010 &nbsp;·&nbsp; Chennai</div>
+      <h1>Premium Meats, <span>Royal Service</span></h1>
+      <div class="hero-divider"></div>
+      <p>For over fifteen years, Royal Proteins &amp; Foods has been the trusted name for premium mutton, chicken, fresh produce and regal event services in Vyasarpadi, Chennai. Quality is our heritage.</p>
+      <div class="hero-tags">
         <span>🐑 Premium Mutton</span>
-        <span>🍗 Fresh Chicken</span>
+        <span>🍗 Fine Chicken</span>
         <span>🍉 Fresh Fruits</span>
         <span>🧃 Fresh Juices</span>
         <span>🎪 Event Services</span>
       </div>
-      <div class="hero-btns" style="opacity:0;animation:fadeInUp .8s ease-out .6s forwards">
-        <button class="btn btn-primary" onclick="navigate('menu')">🛒 Order Now</button>
-        <a href="https://wa.me/919840951202?text=Hi%20Royal%20Proteins!%20I'd%20like%20to%20place%20an%20order" target="_blank" class="btn btn-whatsapp">💬 Order on WhatsApp</a>
+      <div class="hero-btns">
+        <button class="btn btn-primary" onclick="navigate('menu')">Explore Our Selection</button>
+        <a href="https://wa.me/919840951202?text=Hi%20Royal%20Proteins!%20I'd%20like%20to%20place%20an%20order" target="_blank" class="btn btn-whatsapp">Inquire on WhatsApp</a>
       </div>
-      <div class="hero-trust" style="opacity:0;animation:fadeInUp .8s ease-out .7s forwards">
-        <span>★ 200+ Happy Customers</span>
-        <span>✦ 15+ Years of Trust</span>
-        <span>✓ Free Delivery</span>
+      <div class="hero-trust">
+        <span>✦ 200+ HAPPY FAMILIES</span>
+        <span>— 15+ Years of Heritage —</span>
+        <span>Free Delivery in Chennai</span>
       </div>
     </div>
-    <div class="scroll-indicator" style="opacity:0;animation:fadeInUp .8s ease-out .8s forwards">
-      <div class="mouse"><div></div></div>
-      <span>Scroll</span>
+    <div class="scroll-indicator">
+      <div class="line"></div>
+      <span>Discover</span>
     </div>
   </section>
 
-  <!-- Featured Products -->
-  <section style="background:linear-gradient(180deg,#0a0a0a,#0f0f0f)">
+  <!-- Featured -->
+  <section style="background:#0D0D0D">
     <div class="container">
-      <div class="section-head" style="opacity:0" data-reveal>
-        <div class="section-label"><span style="font-size:1rem">✦</span> Signature Selection</div>
-        <h2 class="section-title">Premium <span>Cuts</span></h2>
-        <p class="section-sub">Hand-selected meat, fresh fruits and event services — quality you can taste.</p>
+      <div class="section-head" data-reveal>
+        <div class="section-label">Signature Selection</div>
+        <h2 class="section-title">The Royal <span>Collection</span></h2>
+        <div class="gold-divider"></div>
+        <p class="section-sub">Hand-selected cuts, farm-fresh produce and bespoke event services — every offering reflects our commitment to uncompromising quality.</p>
       </div>
       <div class="featured-grid">
         <div class="featured-card" data-reveal>
           <div class="featured-card-img"><img src="images/mutton.jpg" alt="Premium Mutton" loading="lazy"></div>
           <div class="featured-card-body">
             <h3>Premium Mutton</h3>
-            <p>Fresh, tender mutton — perfect for biryani, curries & roasts. Always farm-fresh.</p>
-            <div class="featured-card-footer"><span class="featured-price">₹1,100/kg</span><span style="font-size:.65rem;color:rgba(255,255,255,.35)">★★★★★</span></div>
+            <p>Tender, farm-fresh mutton — the foundation of every great biryani, curry and roast. Always hand-selected.</p>
+            <div class="featured-card-footer"><span class="featured-price">₹1,100/kg</span><span class="featured-stars">✦✦✦✦✦</span></div>
           </div>
         </div>
         <div class="featured-card" data-reveal>
           <div class="featured-card-img"><img src="images/chicken-skin.jpg" alt="Fresh Chicken" loading="lazy"></div>
           <div class="featured-card-body">
             <h3>Fresh Chicken</h3>
-            <p>Farm-raised, hygienically processed chicken. Available with or without skin.</p>
-            <div class="featured-card-footer"><span class="featured-price">₹330/kg</span><span style="font-size:.65rem;color:rgba(255,255,255,.35)">★★★★★</span></div>
+            <p>Farm-raised, hygienically processed chicken. Available with or without skin. Always fresh, never frozen.</p>
+            <div class="featured-card-footer"><span class="featured-price">₹330/kg</span><span class="featured-stars">✦✦✦✦✦</span></div>
           </div>
         </div>
         <div class="featured-card" data-reveal>
           <div class="featured-card-img"><img src="images/boneless-mutton.jpg" alt="Boneless Mutton" loading="lazy"></div>
           <div class="featured-card-body">
             <h3>Boneless Mutton</h3>
-            <p>100% meat, no bone. Ideal for keema, cutlets & quick meals. Premium quality.</p>
-            <div class="featured-card-footer"><span class="featured-price">₹1,500/kg</span><span style="font-size:.65rem;color:rgba(255,255,255,.35)">★★★★★</span></div>
+            <p>100% pure meat, meticulously deboned. Ideal for keema, cutlets and gourmet preparations.</p>
+            <div class="featured-card-footer"><span class="featured-price">₹1,500/kg</span><span class="featured-stars">✦✦✦✦✦</span></div>
           </div>
         </div>
       </div>
-      <div style="text-align:center;margin-top:32px">
-        <button class="btn btn-primary" onclick="navigate('menu')" data-reveal>View Full Menu &nbsp;→</button>
+      <div style="text-align:center;margin-top:40px">
+        <button class="btn btn-primary" onclick="navigate('menu')" data-reveal>View Full Collection &nbsp;→</button>
       </div>
     </div>
   </section>
 
   <!-- Experience -->
-  <section style="background:#0f0f0f;position:relative;overflow:hidden">
-    <div style="position:absolute;inset:0;opacity:.04">
-      <div style="position:absolute;top:40px;left:40px;width:300px;height:300px;border-radius:50%;background:#8b1a1a;filter:blur(80px)"></div>
-      <div style="position:absolute;bottom:40px;right:40px;width:300px;height:300px;border-radius:50%;background:#8b1a1a;filter:blur(80px)"></div>
+  <section style="background:#050505;position:relative;overflow:hidden">
+    <div style="position:absolute;inset:0;opacity:.03">
+      <div style="position:absolute;top:50px;left:50px;width:300px;height:300px;border-radius:50%;background:#D4AF37;filter:blur(100px)"></div>
+      <div style="position:absolute;bottom:50px;right:50px;width:300px;height:300px;border-radius:50%;background:#D4AF37;filter:blur(100px)"></div>
     </div>
     <div class="container" style="position:relative;z-index:2">
+      <div class="section-head" data-reveal>
+        <div class="section-label">The Royal Difference</div>
+        <h2 class="section-title">Crafted by <span>Tradition</span></h2>
+        <div class="gold-divider"></div>
+        <p class="section-sub">Three generations of butchery excellence, reimagined for the modern table.</p>
+      </div>
       <div class="exp-grid">
         <div class="exp-card" data-reveal>
-          <div class="exp-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/><line x1="6" x2="18" y1="17" y2="17"/></svg></div>
-          <h3>Family Recipe</h3>
-          <p>Traditional butchery passed down through generations — every cut tells a story of quality.</p>
+          <div class="exp-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.2"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/><line x1="6" x2="18" y1="17" y2="17"/></svg></div>
+          <h3>Heritage Craft</h3>
+          <p>Traditional butchery honed over generations — every cut reflects a legacy of quality passed down through time.</p>
         </div>
         <div class="exp-card" data-reveal>
-          <div class="exp-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
-          <h3>Trusted Quality</h3>
-          <p>Every product is carefully sourced and inspected. Freshness guaranteed, always.</p>
+          <div class="exp-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+          <h3>Uncompromising Quality</h3>
+          <p>Every product is carefully sourced and rigorously inspected. Freshness is not a promise — it is our standard.</p>
         </div>
         <div class="exp-card" data-reveal>
-          <div class="exp-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></div>
-          <h3>One-Stop Shop</h3>
-          <p>Mutton, chicken, fruits, and event services — everything you need under one roof.</p>
+          <div class="exp-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></div>
+          <h3>The Complete Experience</h3>
+          <p>Premium meats, fresh produce, and regal event services — everything you need, under one roof.</p>
         </div>
       </div>
     </div>
@@ -560,11 +621,14 @@ footer .hours .gold{color:#d4af37}
   <!-- CTA -->
   <section class="cta-section">
     <div class="cta-pattern"></div>
+    <div class="cta-glow"></div>
     <div class="container">
       <div class="cta-content" data-reveal>
-        <h2>Freshness You Can <span style="color:#d4af37">Trust</span></h2>
-        <p>Order online for delivery in Chennai. Call or WhatsApp us — we're always ready to serve.</p>
-        <a href="https://wa.me/919840951202" target="_blank" class="btn btn-whatsapp" style="font-size:.85rem;padding:16px 40px">💬 Order on WhatsApp</a>
+        <div class="section-label">Place Your Order</div>
+        <h2>Experience <span style="color:#D4AF37">Royal Quality</span></h2>
+        <div class="gold-divider"></div>
+        <p>"Call or message us — we honour every order with the care it deserves. Freshness guaranteed, always."</p>
+        <a href="https://wa.me/919840951202" target="_blank" class="btn btn-whatsapp" style="font-size:.7rem;padding:16px 44px">Send a Message</a>
       </div>
     </div>
   </section>
@@ -574,22 +638,23 @@ footer .hours .gold{color:#d4af37}
 <div class="page hidden" id="page-menu">
   <div class="menu-header">
     <div class="container">
-      <div class="section-label" style="opacity:0" data-reveal>Our Menu</div>
-      <h1 class="section-title" style="opacity:0" data-reveal>Fresh &amp; <span>Premium</span></h1>
-      <p class="section-sub" style="margin:0 auto;opacity:0" data-reveal>A curated selection of quality meats, fresh fruits and event services. All prices in ₹.</p>
+      <div class="section-label" data-reveal>Our Curated Menu</div>
+      <h1 class="section-title" data-reveal>The Royal <span>Selection</span></h1>
+      <div class="gold-divider" data-reveal></div>
+      <p class="section-sub" style="margin:0 auto" data-reveal>A handpicked assortment of premium meats, fresh fruits, juices and event services. Every price reflects our commitment to fair value.</p>
     </div>
   </div>
-  <section style="padding-top:0;background:linear-gradient(180deg,#14100a,#0a0a0a)">
+  <section style="padding-top:0;background:linear-gradient(180deg,#0D0D0D,#050505)">
     <div class="container">
-      <div class="toolbar" style="display:flex;gap:12px;margin-bottom:32px;flex-wrap:wrap;padding-top:40px">
-        <input type="text" id="menuSearch" placeholder="Search menu..." oninput="filterMenu()" style="flex:1;min-width:200px;padding:11px 16px;border-radius:4px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font-family:'Montserrat',sans-serif;font-size:.82rem;outline:none;transition:border-color .3s" onfocus="this.style.borderColor='#8b1a1a'" onblur="this.style.borderColor='rgba(255,255,255,.1)'" placeholder="Search menu...">
-          <div style="display:flex;gap:6px;flex-wrap:wrap" id="menuCats">
-          <button class="btn" style="padding:8px 18px;font-size:.68rem;background:#8b1a1a;color:#fff;border-radius:4px" onclick="filterCat('all')" data-cat="all">All</button>
-          <button class="btn" style="padding:8px 18px;font-size:.68rem;background:transparent;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.1);border-radius:4px" onclick="filterCat('mutton')" data-cat="mutton">Mutton</button>
-          <button class="btn" style="padding:8px 18px;font-size:.68rem;background:transparent;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.1);border-radius:4px" onclick="filterCat('chicken')" data-cat="chicken">Chicken</button>
-          <button class="btn" style="padding:8px 18px;font-size:.68rem;background:transparent;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.1);border-radius:4px" onclick="filterCat('fruit')" data-cat="fruit">Fruits</button>
-          <button class="btn" style="padding:8px 18px;font-size:.68rem;background:transparent;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.1);border-radius:4px" onclick="filterCat('juice')" data-cat="juice">Juices</button>
-          <button class="btn" style="padding:8px 18px;font-size:.68rem;background:transparent;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.1);border-radius:4px" onclick="filterCat('service')" data-cat="service">Services</button>
+      <div class="toolbar">
+        <input type="text" id="menuSearch" placeholder="Search the collection..." oninput="filterMenu()">
+        <div id="menuCats">
+          <button class="btn" style="background:#D4AF37;color:#050505;border:1px solid #D4AF37" onclick="filterCat('all')" data-cat="all">All</button>
+          <button class="btn" style="background:transparent;color:rgba(255,255,255,.55);border:1px solid rgba(212,175,55,.15)" onclick="filterCat('mutton')" data-cat="mutton">Mutton</button>
+          <button class="btn" style="background:transparent;color:rgba(255,255,255,.55);border:1px solid rgba(212,175,55,.15)" onclick="filterCat('chicken')" data-cat="chicken">Chicken</button>
+          <button class="btn" style="background:transparent;color:rgba(255,255,255,.55);border:1px solid rgba(212,175,55,.15)" onclick="filterCat('fruit')" data-cat="fruit">Fruits</button>
+          <button class="btn" style="background:transparent;color:rgba(255,255,255,.55);border:1px solid rgba(212,175,55,.15)" onclick="filterCat('juice')" data-cat="juice">Juices</button>
+          <button class="btn" style="background:transparent;color:rgba(255,255,255,.55);border:1px solid rgba(212,175,55,.15)" onclick="filterCat('service')" data-cat="service">Services</button>
         </div>
       </div>
       <div id="menuGrid"></div>
@@ -599,30 +664,31 @@ footer .hours .gold{color:#d4af37}
 
 <!-- ─── PAGE: ABOUT ─── -->
 <div class="page hidden" id="page-about">
-  <section style="padding-top:120px;background:linear-gradient(180deg,#0a0a0a,#0f0f0f);min-height:100vh">
+  <section style="padding-top:140px;background:linear-gradient(180deg,#050505,#0D0D0D);min-height:100vh">
     <div class="container">
       <div class="section-head" data-reveal>
-        <div class="section-label">About Us</div>
-        <h1 class="section-title">Our <span>Story</span></h1>
+        <div class="section-label">Our Legacy</div>
+        <h1 class="section-title">The Royal <span>Story</span></h1>
+        <div class="gold-divider"></div>
       </div>
       <div class="about-grid">
         <div class="about-visual" data-reveal><img src="images/logo.jpg" alt="Royal Proteins & Foods"></div>
         <div class="about-text" data-reveal>
-          <h2>A Legacy of Quality</h2>
-          <p>Based in Vyasarpadi, Chennai, Royal Proteins & Foods is a family-run business dedicated to providing the finest quality mutton, chicken, and fresh fruits at fair prices. Every cut is carefully prepared to ensure freshness and hygiene.</p>
-          <p>Beyond retail meats, we offer event services including Shamiyana tent rental, decorations, cooking vessels, and professional cleaners — making us a one-stop shop for your gatherings and daily needs.</p>
-            <div class="about-stats">
-              <div class="about-stat"><div class="num"><span class="counter" data-target="50" data-suffix="+">0+</span></div><div class="label">Products</div></div>
-              <div class="about-stat"><div class="num"><span class="counter" data-target="15" data-suffix="+">0+</span></div><div class="label">Years</div></div>
-              <div class="about-stat"><div class="num"><span class="counter" data-target="100" data-suffix="%">0%</span></div><div class="label">Fresh</div></div>
-            </div>
+          <h2>Three Generations of Excellence</h2>
+          <p>Based in Vyasarpadi, Chennai, Royal Proteins &amp; Foods is a family-owned establishment dedicated to providing the finest quality mutton, chicken and fresh produce at honest prices. Every cut is prepared with the care and precision that only decades of experience can bring.</p>
+          <p>Beyond our retail offerings, we provide comprehensive event services — from Shamiyana tent rentals and elegant decorations to cooking vessels and professional cleaning — making us the complete destination for your gatherings and daily needs.</p>
+          <div class="about-stats">
+            <div class="about-stat"><div class="num"><span class="counter" data-target="50" data-suffix="+">0+</span></div><div class="label">Products</div></div>
+            <div class="about-stat"><div class="num"><span class="counter" data-target="15" data-suffix="+">0+</span></div><div class="label">Years</div></div>
+            <div class="about-stat"><div class="num"><span class="counter" data-target="100" data-suffix="%">0%</span></div><div class="label">Fresh</div></div>
+          </div>
         </div>
       </div>
       <div style="margin-top:60px;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px" data-reveal>
-        <div style="background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:4px;padding:16px;text-align:center"><div style="font-size:.65rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px">📍 Location</div><div style="font-weight:500;font-size:.88rem">Vyasarpadi, Chennai</div></div>
-        <div style="background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:4px;padding:16px;text-align:center"><div style="font-size:.65rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px">📞 Phone</div><div style="font-weight:500;font-size:.88rem">9840951202</div></div>
-        <div style="background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:4px;padding:16px;text-align:center"><div style="font-size:.65rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px">🕐 Hours</div><div style="font-weight:500;font-size:.88rem">9AM–9PM · Sat 10AM–10PM</div></div>
-        <div style="background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:4px;padding:16px;text-align:center"><div style="font-size:.65rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px">💳 GST</div><div style="font-weight:500;font-size:.88rem">33BCDPM9152M1ZA</div></div>
+        <div style="background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.1);border-radius:10px;padding:20px 16px;text-align:center"><div style="font-family:'Cinzel',serif;font-size:.55rem;color:rgba(212,175,55,.6);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px">📍 Location</div><div style="font-weight:500;font-size:.85rem">Vyasarpadi, Chennai</div></div>
+        <div style="background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.1);border-radius:10px;padding:20px 16px;text-align:center"><div style="font-family:'Cinzel',serif;font-size:.55rem;color:rgba(212,175,55,.6);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px">📞 Phone</div><div style="font-weight:500;font-size:.85rem">9840951202</div></div>
+        <div style="background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.1);border-radius:10px;padding:20px 16px;text-align:center"><div style="font-family:'Cinzel',serif;font-size:.55rem;color:rgba(212,175,55,.6);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px">🕐 Hours</div><div style="font-weight:500;font-size:.85rem">9AM–9PM · Sat 10AM–10PM</div></div>
+        <div style="background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.1);border-radius:10px;padding:20px 16px;text-align:center"><div style="font-family:'Cinzel',serif;font-size:.55rem;color:rgba(212,175,55,.6);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px">💳 GST</div><div style="font-weight:500;font-size:.85rem">33BCDPM9152M1ZA</div></div>
       </div>
     </div>
   </section>
@@ -630,12 +696,13 @@ footer .hours .gold{color:#d4af37}
 
 <!-- ─── PAGE: GALLERY ─── -->
 <div class="page hidden" id="page-gallery">
-  <section style="padding-top:120px;background:linear-gradient(180deg,#0a0a0a,#0f0f0f);min-height:100vh">
+  <section style="padding-top:140px;background:linear-gradient(180deg,#050505,#0D0D0D);min-height:100vh">
     <div class="container">
       <div class="section-head" data-reveal>
-        <div class="section-label">Gallery</div>
-        <h1 class="section-title">Visual <span>Journey</span></h1>
-        <p class="section-sub">A glimpse into our quality meats, fresh produce and event services.</p>
+        <div class="section-label">Our Gallery</div>
+        <h1 class="section-title">A Visual <span>Journey</span></h1>
+        <div class="gold-divider"></div>
+        <p class="section-sub">A glimpse into our world of quality meats, fresh produce and elegant event services.</p>
       </div>
       <div class="gallery-grid">
         <div class="gallery-item" data-reveal><img src="images/mutton.jpg" alt="Premium Mutton" loading="lazy"><div class="label">Premium Mutton</div></div>
@@ -653,22 +720,23 @@ footer .hours .gold{color:#d4af37}
 
 <!-- ─── PAGE: REVIEWS ─── -->
 <div class="page hidden" id="page-reviews">
-  <section style="padding-top:120px;background:linear-gradient(180deg,#0a0a0a,#0f0f0f);min-height:100vh">
+  <section style="padding-top:140px;background:linear-gradient(180deg,#050505,#0D0D0D);min-height:100vh">
     <div class="container">
       <div class="reviews-header" data-reveal>
         <div class="section-label">Testimonials</div>
-        <h1 class="section-title">What Our <span>Customers Say</span></h1>
-        <div class="stars">★★★★★</div>
+        <h1 class="section-title">What Our <span>Patrons Say</span></h1>
+        <div class="gold-divider"></div>
+        <div class="stars">✦ ✦ ✦ ✦ ✦</div>
         <div class="avg">5.0</div>
-        <div class="count">Based on 200+ reviews</div>
+        <div class="count">— Based on 200+ reviews —</div>
       </div>
       <div class="reviews-grid">
-        <div class="review-card" data-reveal><div class="review-stars">★★★★★</div><div class="review-text">"Best mutton in Vyasarpadi! Always fresh and well-cleaned. The boneless mutton is perfect for biryani. Highly recommended!"</div><div class="review-author">— Ramesh K.</div><div class="review-role">Regular Customer</div></div>
-        <div class="review-card" data-reveal><div class="review-stars">★★★★★</div><div class="review-text">"Ordered chicken for a family gathering. Great quality, hygienically packed, and delivered on time. Will order again!"</div><div class="review-author">— Priya S.</div><div class="review-role">Home Chef</div></div>
-        <div class="review-card" data-reveal><div class="review-stars">★★★★★</div><div class="review-text">"They arranged a Shamiyana tent and decorations for our son's wedding. Excellent service and very reasonable pricing."</div><div class="review-author">— Ahmed M.</div><div class="review-role">Event Organizer</div></div>
-        <div class="review-card" data-reveal><div class="review-stars">★★★★★</div><div class="review-text">"The freshest chicken I've found in Chennai. Fair prices and friendly service. This is my go-to meat shop now."</div><div class="review-author">— Anjali R.</div><div class="review-role">Local Resident</div></div>
-        <div class="review-card" data-reveal><div class="review-stars">★★★★★</div><div class="review-text">"Excellent quality mutton, always tender and fresh. The paya soup bones are amazing. Truly a gem in Vyasarpadi!"</div><div class="review-author">— Venkat S.</div><div class="review-role">Food Enthusiast</div></div>
-        <div class="review-card" data-reveal><div class="review-stars">★★★★★</div><div class="review-text">"I ordered fruits for a party and they were perfectly ripe and sweet. Great service, highly recommend Royal Proteins!"</div><div class="review-author">— Lakshmi N.</div><div class="review-role">Event Planner</div></div>
+        <div class="review-card" data-reveal><div class="review-stars">✦✦✦✦✦</div><div class="review-text">"The finest mutton in Vyasarpadi. Always impeccably fresh and well-cleaned. The boneless mutton is exceptional for biryani. A true gem."</div><div class="review-author">Ramesh K.</div><div class="review-role">Regular Patron</div></div>
+        <div class="review-card" data-reveal><div class="review-stars">✦✦✦✦✦</div><div class="review-text">"Ordered chicken for a family gathering. The quality was outstanding, hygienically packed, and delivered precisely on time. Our sincere gratitude."</div><div class="review-author">Priya S.</div><div class="review-role">Home Chef</div></div>
+        <div class="review-card" data-reveal><div class="review-stars">✦✦✦✦✦</div><div class="review-text">"They arranged a Shamiyana tent and decorations for our son's wedding. The service was impeccable and the pricing most reasonable. Highly recommended."</div><div class="review-author">Ahmed M.</div><div class="review-role">Event Organiser</div></div>
+        <div class="review-card" data-reveal><div class="review-stars">✦✦✦✦✦</div><div class="review-text">"The freshest chicken I have found in Chennai. Fair prices and warm, attentive service. This is my go-to establishment without question."</div><div class="review-author">Anjali R.</div><div class="review-role">Local Resident</div></div>
+        <div class="review-card" data-reveal><div class="review-stars">✦✦✦✦✦</div><div class="review-text">"Exceptional quality mutton — always tender and fresh. The paya soup bones are remarkable. A true culinary treasure in Vyasarpadi."</div><div class="review-author">Venkat S.</div><div class="review-role">Food Enthusiast</div></div>
+        <div class="review-card" data-reveal><div class="review-stars">✦✦✦✦✦</div><div class="review-text">"I ordered fruits for a celebration and they were perfectly ripe and wonderfully sweet. Flawless service. Royal Proteins never disappoints."</div><div class="review-author">Lakshmi N.</div><div class="review-role">Event Planner</div></div>
       </div>
     </div>
   </section>
@@ -676,22 +744,23 @@ footer .hours .gold{color:#d4af37}
 
 <!-- ─── PAGE: CONTACT ─── -->
 <div class="page hidden" id="page-contact">
-  <section style="padding-top:120px;background:linear-gradient(180deg,#0a0a0a,#0f0f0f);min-height:100vh">
+  <section style="padding-top:140px;background:linear-gradient(180deg,#050505,#0D0D0D);min-height:100vh">
     <div class="container">
       <div class="section-head" data-reveal>
         <div class="section-label">Get In Touch</div>
         <h1 class="section-title">Contact <span>Us</span></h1>
-        <p class="section-sub">Call, WhatsApp, or visit us — we're always happy to help.</p>
+        <div class="gold-divider"></div>
+        <p class="section-sub">Call, message, or visit — we are always honoured to serve you.</p>
       </div>
       <div class="contact-grid">
         <div class="contact-info" data-reveal>
-          <h2>Reach Out</h2>
+          <h2>Our Details</h2>
           <div class="contact-item"><div class="contact-icon">📞</div><div><div class="label">Phone / WhatsApp</div><div class="val"><a href="tel:9840951202">9840951202</a></div></div></div>
           <div class="contact-item"><div class="contact-icon">📍</div><div><div class="label">Address</div><div class="val">Vyasarpadi, Chennai, Tamil Nadu</div></div></div>
           <div class="contact-item"><div class="contact-icon">🕐</div><div><div class="label">Business Hours</div><div class="val">Open daily · 9AM – 9PM (Sat till 10PM)</div></div></div>
-          <div style="margin-top:16px"><a href="https://wa.me/919840951202" target="_blank" class="btn btn-whatsapp" style="display:inline-flex">💬 Chat on WhatsApp</a></div>
-          <div class="hours-box" style="margin-top:28px">
-            <h3>Business Hours</h3>
+          <div style="margin-top:20px"><a href="https://wa.me/919840951202" target="_blank" class="btn btn-whatsapp" style="display:inline-flex">Send a Message</a></div>
+          <div class="hours-box" style="margin-top:32px">
+            <h3>Hours of Operation</h3>
             <div class="hours-row"><span class="day">Monday</span><span class="time">9:00 AM – 9:00 PM</span></div>
             <div class="hours-row"><span class="day">Tuesday</span><span class="time">9:00 AM – 9:00 PM</span></div>
             <div class="hours-row"><span class="day">Wednesday</span><span class="time">9:00 AM – 9:00 PM</span></div>
@@ -702,19 +771,19 @@ footer .hours .gold{color:#d4af37}
           </div>
         </div>
         <div data-reveal>
-          <h2 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;margin-bottom:20px">Send a Message</h2>
+          <h2 style="font-family:'Cinzel',serif;font-size:1.2rem;margin-bottom:24px;letter-spacing:.03em">Send a Message</h2>
           <form class="contact-form" onsubmit="return handleContactForm(event)">
-            <div style="margin-bottom:14px"><input type="text" placeholder="Your Name" required></div>
-            <div style="margin-bottom:14px"><input type="email" placeholder="Email Address" required></div>
-            <div style="margin-bottom:14px"><input type="tel" placeholder="Phone Number" required></div>
-            <div style="margin-bottom:14px"><textarea rows="4" placeholder="Your Message" required style="width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:14px 16px;color:#fff;font-family:'Montserrat',sans-serif;font-size:16px;outline:none;resize:vertical;box-sizing:border-box"></textarea></div>
-            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px">Send Message</button>
+            <div style="margin-bottom:16px"><input type="text" placeholder="Your Name" required></div>
+            <div style="margin-bottom:16px"><input type="email" placeholder="Email Address" required></div>
+            <div style="margin-bottom:16px"><input type="tel" placeholder="Phone Number" required></div>
+            <div style="margin-bottom:16px"><textarea rows="4" placeholder="Your Message" required style="width:100%;background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.12);padding:14px 18px;color:#fff;font-family:'Inter',sans-serif;font-size:16px;outline:none;resize:vertical;box-sizing:border-box"></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:16px">Send Message</button>
           </form>
         </div>
       </div>
-      <div style="margin-top:40px;background:rgba(212,175,55,.06);border:1px solid rgba(212,175,55,.15);border-radius:4px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px" data-reveal>
-        <div><h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;margin-bottom:4px">🚚 Delivery Available</h3><p style="color:rgba(255,255,255,.55);font-size:.85rem">Order online and get fresh meat delivered to your doorstep in Chennai.</p></div>
-        <a href="https://wa.me/919840951202" target="_blank" class="btn btn-whatsapp" style="flex-shrink:0">💬 Order Now</a>
+      <div style="margin-top:48px;background:rgba(212,175,55,.04);border:1px solid rgba(212,175,55,.15);border-radius:12px;padding:32px 36px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px" data-reveal>
+        <div><h3 style="font-family:'Cinzel',serif;font-size:1.1rem;margin-bottom:6px;letter-spacing:.03em">🚚 Complimentary Delivery</h3><p style="font-family:'Inter',sans-serif;color:#C9C9C9;font-size:.82rem;font-weight:300">Order online and receive fresh provisions delivered to your doorstep in Chennai. Royal service, always.</p></div>
+        <a href="https://wa.me/919840951202" target="_blank" class="btn btn-whatsapp" style="flex-shrink:0">Place an Order</a>
       </div>
     </div>
   </section>
@@ -726,10 +795,10 @@ footer .hours .gold{color:#d4af37}
     <div class="footer-grid">
       <div>
         <div class="logo">Royal<span>Proteins</span></div>
-        <p class="desc">Good Food, Good Moments. Premium quality meats, fresh fruits and event services in Vyasarpadi, Chennai.</p>
+        <p class="desc">Premium meats, fresh produce and regal event services in Vyasarpadi, Chennai. Serving discerning families since 2010.</p>
       </div>
       <div>
-        <h4>Quick Links</h4>
+        <h4>Navigate</h4>
         <div class="links">
           <button onclick="navigate('home')">Home</button>
           <button onclick="navigate('menu')">Menu</button>
@@ -744,9 +813,9 @@ footer .hours .gold{color:#d4af37}
         <div class="hours">
           <p>Monday – Friday</p>
           <p class="gold">9:00 AM – 9:00 PM</p>
-          <p style="margin-top:10px">Saturday</p>
+          <p style="margin-top:12px">Saturday</p>
           <p class="gold">10:00 AM – 10:00 PM</p>
-          <p style="margin-top:10px">Sunday</p>
+          <p style="margin-top:12px">Sunday</p>
           <p class="gold">9:00 AM – 9:00 PM</p>
         </div>
       </div>
@@ -758,11 +827,12 @@ footer .hours .gold{color:#d4af37}
         </div>
       </div>
     </div>
+    <div class="footer-divider"></div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Royal Proteins & Foods. GST: 33BCDPM9152M1ZA</p>
+      <p>&copy; 2026 Royal Proteins &amp; Foods &nbsp;·&nbsp; GST: 33BCDPM9152M1ZA</p>
       <div class="legal">
-        <button>Privacy Policy</button>
-        <button>Terms of Service</button>
+        <button>Privacy</button>
+        <button>Terms</button>
       </div>
     </div>
   </div>
@@ -782,47 +852,40 @@ footer .hours .gold{color:#d4af37}
       <span id="pmodalQtyVal">1</span>
       <button onclick="changeModalQty(1)">+</button>
     </div>
-    <button class="pmodal-add" id="pmodalAdd" onclick="handleAddToCart()">💬 Add to Order</button>
-    <div class="pmodal-call" id="pmodalCall"><a href="tel:9840951202">📞 Call for details</a></div>
+    <button class="pmodal-add" id="pmodalAdd" onclick="handleAddToCart()">Add to Order</button>
+    <div class="pmodal-call" id="pmodalCall"><a href="tel:9840951202">Call for details</a></div>
   </div>
 </div>
 
 <!-- ─── OVERLAY ─── -->
-<div class="overlay" id="overlay"></div>
+<div class="cart-overlay" id="cartOverlay"></div>
 
 <!-- ─── CART ─── -->
 <button class="cart-fab" id="cartFab" onclick="openCart()">🛒 <span class="count" id="cartCount">0</span></button>
 <div class="cart-panel" id="cartPanel">
   <div class="cart-header">
-    <h3>🛒 Your Order</h3>
-    <div style="display:flex;align-items:center;gap:10px">
-      <button class="cart-clear" onclick="clearCart()">Clear</button>
+    <h3>Your Order</h3>
+    <div style="display:flex;align-items:center;gap:12px">
+      <button class="cart-clear" onclick="clearCart()" style="background:none;border:none;font-family:'Inter',sans-serif;color:rgba(255,255,255,.3);font-size:.65rem;cursor:pointer;transition:color .3s;font-weight:300;padding:4px">Clear</button>
       <button class="cart-close" onclick="closeCart()">&times;</button>
     </div>
   </div>
   <div class="cart-items" id="cartItems">
-    <div class="cart-empty"><p style="font-size:.9rem;margin-bottom:6px">Your cart is empty</p><p style="font-size:.76rem">Add products to get started</p></div>
+    <div class="cart-empty"><p>Your order is awaiting your selection</p></div>
   </div>
   <div class="cart-footer" id="cartFooter" style="display:none">
     <div class="cart-total"><span>Total</span><span id="cartTotal">₹0</span></div>
-    <button class="cart-checkout" onclick="checkout()">💬 Order on WhatsApp</button>
+    <button class="btn btn-primary" onclick="rzpCheckout()" style="width:100%;justify-content:center;padding:14px;font-size:.65rem">Pay Online</button>
+    <button class="cart-checkout" onclick="checkout()">Order via WhatsApp</button>
   </div>
 </div>
 
 <div class="toast" id="toast"></div>
 
-<div class="progress-bar" id="progressBar"></div>
-<button class="btt" id="btt" onclick="scrollToTop()" aria-label="Back to top">↑</button>
-<div class="page-transition" id="pageTransition"></div>
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <button class="lightbox-close">&times;</button>
-  <img id="lightboxImg" src="" alt="">
-</div>
-
 <script>
 // ─── PRODUCT DATA ───
 const products = [
-  {id:1,cat:'mutton',name:'Mutton',desc:'Fresh premium quality mutton',price:1100,unit:'/kg',img:'mutton.jpg',badge:'Best Seller',variants:[{label:'500g',price:550},{label:'1kg',price:1100}]},
+  {id:1,cat:'mutton',name:'Mutton',desc:'Fresh premium quality mutton',price:1100,unit:'/kg',img:'mutton.jpg',badge:'Signature',variants:[{label:'500g',price:550},{label:'1kg',price:1100}]},
   {id:2,cat:'mutton',name:'Chops',desc:'1kg – tender and fresh',price:1099,unit:'/kg',img:'chops.jpg',variants:[{label:'500g',price:550},{label:'1kg',price:1099}]},
   {id:3,cat:'mutton',name:'Mince Keema',desc:'Minced meat without bone',price:1300,unit:'/kg',img:'keema.jpg',variants:[{label:'500g',price:650},{label:'1kg',price:1300}]},
   {id:4,cat:'mutton',name:'Breast Soup Bone (with fat)',desc:'1kg – perfect for soups',price:1040,unit:'/kg',img:'soupbone-fat.jpg',variants:[{label:'500g',price:520},{label:'1kg',price:1040}]},
@@ -880,6 +943,7 @@ let cart = JSON.parse(localStorage.getItem('rpCart')||'[]');
 let currentPage = 'home';
 let menuCat = 'all';
 let menuQ = '';
+const RZP_KEY = 'rzp_live_XXXXXXXXXXXXXXXX';
 
 // ─── NAVIGATION ───
 function navigate(page) {
@@ -955,7 +1019,7 @@ function renderMenu() {
   if (menuCat !== 'all') items = items.filter(p => p.cat === menuCat);
   if (menuQ) { const q = menuQ.toLowerCase(); items = items.filter(p => p.name.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q)); }
   if (items.length === 0) {
-    grid.innerHTML = '<div style="text-align:center;padding:60px 20px;color:rgba(255,255,255,.4)">No products found.</div>';
+    grid.innerHTML = '<div style="text-align:center;padding:60px 20px;color:rgba(255,255,255,.3);font-family:\'Cormorant Garamond\',serif;font-style:italic">No items found in this collection.</div>';
     return;
   }
   const cats = {};
@@ -999,13 +1063,13 @@ function openPmodal(id) {
     vContainer.style.display = 'flex';
     selectedVariant = { label: p.variants[0].label, price: p.variants[0].price };
     addBtn.style.display = 'flex';
-    addBtn.innerHTML = '💬 Add to Order — ₹'+p.variants[0].price.toLocaleString('en-IN');
+    addBtn.textContent = 'Add to Order — ₹'+p.variants[0].price.toLocaleString('en-IN');
     callDiv.style.display = 'none';
   } else if (p.price > 0) {
     vContainer.style.display = 'none';
     selectedVariant = { label: p.unit, price: p.price };
     addBtn.style.display = 'flex';
-    addBtn.innerHTML = '💬 Add to Order — ₹'+p.price.toLocaleString('en-IN')+' '+p.unit;
+    addBtn.textContent = 'Add to Order — ₹'+p.price.toLocaleString('en-IN')+' '+p.unit;
     callDiv.style.display = 'none';
   } else {
     vContainer.style.display = 'none';
@@ -1023,7 +1087,7 @@ function selectVariant(el, price, label) {
   document.querySelectorAll('.pmodal-variant').forEach(v => v.classList.remove('selected'));
   el.classList.add('selected');
   selectedVariant = { label, price };
-  document.getElementById('pmodalAdd').innerHTML = '💬 Add to Order — ₹'+price.toLocaleString('en-IN');
+  document.getElementById('pmodalAdd').textContent = 'Add to Order — ₹'+price.toLocaleString('en-IN');
 }
 
 function closePmodal() {
@@ -1031,6 +1095,7 @@ function closePmodal() {
   document.getElementById('pmodal').classList.remove('open');
   document.body.style.overflow = '';
   document.body.style.position = '';
+  document.body.style.width = '';
 }
 document.getElementById('pmodalOverlay').addEventListener('click', closePmodal);
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closePmodal(); });
@@ -1049,8 +1114,9 @@ function filterCat(cat) {
   menuCat = cat;
   document.querySelectorAll('#menuCats .btn').forEach(b => {
     const isActive = b.dataset.cat === cat;
-    b.style.background = isActive ? '#8b1a1a' : 'transparent';
-    b.style.color = isActive ? '#fff' : 'rgba(255,255,255,.7)';
+    b.style.background = isActive ? '#D4AF37' : 'transparent';
+    b.style.color = isActive ? '#050505' : 'rgba(255,255,255,.55)';
+    b.style.borderColor = isActive ? '#D4AF37' : 'rgba(212,175,55,.15)';
   });
   renderMenu();
 }
@@ -1068,7 +1134,7 @@ function updateCart() {
   const panel = document.getElementById('cartItems');
   const footer = document.getElementById('cartFooter');
   if (cart.length === 0) {
-    panel.innerHTML = '<div class="cart-empty"><p style="font-size:.9rem;margin-bottom:6px">Your cart is empty</p><p style="font-size:.76rem">Add products to get started</p></div>';
+    panel.innerHTML = '<div class="cart-empty"><p>Your order is awaiting your selection</p></div>';
     footer.style.display = 'none';
     return;
   }
@@ -1090,14 +1156,13 @@ function addToCart(id, variant) {
   const vprice = variant ? variant.price : p.price;
   const vlabel = variant ? variant.label : '';
   if (vprice === 0) {
-    window.open(`https://wa.me/919840951202?text=Hi%20Royal%20Proteins!%20I%27m%20interested%20in%20${encodeURIComponent(p.name)}.%20Please%20share%20details.`,'_blank');
+    window.open(`https://wa.me/919840951202?text=Hi%20Royal%20Proteins!%20I'm%20interested%20in%20${encodeURIComponent(p.name)}.%20Please%20share%20details.`,'_blank');
     return;
   }
-  const key = id + '-' + vlabel;
   const e = cart.find(i => i.id === id && i.vlabel === vlabel);
   if (e) e.qty++; else cart.push({id, qty:1, vprice, vlabel});
   updateCart();
-  showToast('✓ Added '+p.name+(vlabel?' ('+vlabel+')':''));
+  showToast('Added '+p.name+(vlabel?' ('+vlabel+')':''));
   document.getElementById('cartFab').style.transform = 'scale(1.12)';
   setTimeout(() => document.getElementById('cartFab').style.transform = '', 300);
 }
@@ -1111,11 +1176,11 @@ function changeQty(id, vlabel, delta) {
   updateCart();
 }
 
-function clearCart() { cart = []; updateCart(); showToast('Cart cleared'); }
+function clearCart() { cart = []; updateCart(); showToast('Order cleared'); }
 
-function openCart() { document.getElementById('cartPanel').classList.add('open'); document.getElementById('overlay').classList.add('show'); }
-function closeCart() { document.getElementById('cartPanel').classList.remove('open'); document.getElementById('overlay').classList.remove('show'); }
-document.getElementById('overlay').addEventListener('click', closeCart);
+function openCart() { document.getElementById('cartPanel').classList.add('open'); document.getElementById('cartOverlay').classList.add('show'); }
+function closeCart() { document.getElementById('cartPanel').classList.remove('open'); document.getElementById('cartOverlay').classList.remove('show'); }
+document.getElementById('cartOverlay').addEventListener('click', closeCart);
 
 function checkout() {
   if (cart.length === 0) return;
@@ -1128,21 +1193,52 @@ function checkout() {
   window.open(`https://wa.me/919840951202?text=Hi%20Royal%20Proteins!%20I'd%20like%20to%20order:%0A${lines.join('%0A')}%0A%0ATotal: ₹${total.toLocaleString('en-IN')}%0A%0APlease confirm availability & delivery.`,'_blank');
 }
 
+// ─── RAZORPAY CHECKOUT ───
+async function rzpCheckout() {
+  if (cart.length === 0) return;
+  if (typeof Razorpay === 'undefined') { showToast('Payment gateway loading. Try again.'); return; }
+  const total = cart.reduce((s,i) => s + i.vprice * i.qty, 0);
+  if (total === 0) return;
+  try {
+    const res = await fetch('/api/create-order', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({amount:total})
+    });
+    const order = await res.json();
+    if (!order.id) { showToast('Payment error. Try again.'); return; }
+    const rzp = new Razorpay({
+      key: RZP_KEY,
+      amount: order.amount,
+      currency: 'INR',
+      name: 'Royal Proteins & Foods',
+      description: 'Food Order',
+      order_id: order.id,
+      prefill: { contact: '9840951202' },
+      handler: function(response) {
+        const lines = cart.map(i => {
+          const p = products.find(x => x.id === i.id);
+          const label = i.vlabel ? ' ('+i.vlabel+')' : '';
+          return `• ${p.name}${label} x${i.qty} = ₹${(i.vprice*i.qty).toLocaleString('en-IN')}`;
+        });
+        const msg = `Hi Royal Proteins! I've paid for my order.%0A%0APayment ID: ${response.razorpay_payment_id}%0AOrder ID: ${response.razorpay_order_id}%0A%0A${lines.join('%0A')}%0A%0ATotal: ₹${total.toLocaleString('en-IN')}%0A%0APlease confirm delivery.`;
+        window.open(`https://wa.me/919840951202?text=${msg}`,'_blank');
+        cart = []; updateCart(); closeCart();
+        showToast('Payment successful!');
+      },
+      modal: { ondismiss: function() { showToast('Payment cancelled'); } }
+    });
+    rzp.open();
+  } catch(e) {
+    showToast('Payment error. Please try again or use WhatsApp.');
+  }
+}
+
 function showToast(msg) {
   const t = document.getElementById('toast');
   t.textContent = '✓  ' + msg;
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2500);
-}
-
-// ─── CONTACT FORM ───
-function handleContactForm(e) {
-  e.preventDefault();
-  const f = e.target;
-  const name = f.querySelector('[placeholder="Your Name"]').value;
-  const msg = f.querySelector('textarea').value;
-  window.open(`https://wa.me/919840951202?text=Hi%20Royal%20Proteins!%20My%20name%20is%20${encodeURIComponent(name)}.%20${encodeURIComponent(msg)}`,'_blank');
-  return false;
 }
 
 // ─── QUANTITY IN MODAL ───
@@ -1153,7 +1249,7 @@ function changeModalQty(delta) {
   el.textContent = v;
 }
 
-// ─── CART FLY ANIMATION ───
+// ─── CART FLY ───
 function cartFlyAnimation(imgSrc) {
   const el = document.createElement('img');
   el.className = 'cart-fly active';
@@ -1192,7 +1288,7 @@ document.getElementById('lightbox').addEventListener('click', e => {
   if (e.target === e.currentTarget || e.target.classList.contains('lightbox-close')) closeLightbox();
 });
 
-// ─── COUNTER ANIMATION ───
+// ─── COUNTER ───
 function initCounters() {
   document.querySelectorAll('.counter').forEach(el => {
     const target = parseInt(el.dataset.target);
@@ -1223,6 +1319,16 @@ document.addEventListener('click', e => {
   const gi = e.target.closest('.gallery-item img');
   if (gi) openLightbox(gi.src);
 });
+
+// ─── CONTACT FORM ───
+function handleContactForm(e) {
+  e.preventDefault();
+  const f = e.target;
+  const name = f.querySelector('[placeholder="Your Name"]').value;
+  const msg = f.querySelector('textarea').value;
+  window.open(`https://wa.me/919840951202?text=Hi%20Royal%20Proteins!%20My%20name%20is%20${encodeURIComponent(name)}.%20${encodeURIComponent(msg)}`,'_blank');
+  return false;
+}
 
 // ─── SERVICE WORKER ───
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
